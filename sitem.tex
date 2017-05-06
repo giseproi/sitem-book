@@ -1,0 +1,44 @@
+\documentclass[11pt]{report}
+\usepackage[spanish]{babel} % division de silabas en español.
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc} %%%Para poner acentos directamente
+\usepackage[usenames]{color}
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage{sidecap}
+\usepackage{appendix}
+\usepackage[letterpaper,left=3cm,top=3cm,right=3cm,bottom=3cm,nohead]{geometry} %Margenes
+\usepackage[dvips]{graphicx}
+\parindent=0in
+\setlength{\parskip}{0.5cm} %Espacio entre parrafos
+\sffamily % Familia de fuentes a utilizar por defecto en el documento
+\title{Sistema de Información para Proyectos de Telemedicina}
+\author{Lilia Edith Aparicio - Paulo César Coronado}
+%\includeonly{proceso_desarrollo}
+\begin{document}
+\DeclareGraphicsExtensions{.jpg, .png, .eps}
+\renewcommand{\tablename}{Tabla}
+\renewcommand{\listtablename}{Índice de tablas}
+\renewcommand{\appendixname}{Anexo}
+%\maketitle
+\tableofcontents
+\include{Presentacion}
+\include{Antecedentes}
+\include{Capitulo_Contexto_Teorico}
+\include{Capitulo_SITEM}
+\include{proceso_desarrollo}
+\include{Bibliografia}
+\include{glosario}
+\begin{appendices}
+\include{Riesgos}
+\include{licencia}
+\include{modelo_requisitos}
+\include{modelo_analisis}
+\include{modelo_implementacion}
+\include{modelo_datos}
+\include{modelo_despliegue}
+\include{encuesta_preliminar}
+\include{entregables}
+\include{manual_usuario}
+\end{appendices}
+\end{document}

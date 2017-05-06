@@ -1,0 +1,106 @@
+\select@language {spanish}
+\contentsline {chapter}{PRESENTACI\IeC {\'O}N}{6}
+\contentsline {chapter}{\numberline {1}Antecedentes}{7}
+\contentsline {section}{\numberline {1.1}Antecedentes del Dominio}{7}
+\contentsline {section}{\numberline {1.2}Fases precursoras del SITEM}{9}
+\contentsline {subsection}{\numberline {1.2.1}Sistema de Informaci\IeC {\'o}n para Telemedicina \IeC {\textendash } Fase I}{11}
+\contentsline {subsection}{\numberline {1.2.2}Sistema de Informaci\IeC {\'o}n para Telemedicina \IeC {\textendash } Fase II}{12}
+\contentsline {subsection}{\numberline {1.2.3}Sistema de Informaci\IeC {\'o}n para Telemedicina \IeC {\textendash } Fase III}{14}
+\contentsline {chapter}{\numberline {2}Contexto Te\IeC {\'o}rico}{16}
+\contentsline {section}{\numberline {2.1}Telemedicina}{16}
+\contentsline {subsection}{\numberline {2.1.1}Componentes Tecnol\IeC {\'o}gicos de los Sistemas de Telemedicina}{17}
+\contentsline {section}{\numberline {2.2}Marco Legislativo y Normativo}{20}
+\contentsline {subsection}{\numberline {2.2.1}En el Ambito de los Servicios M\IeC {\'e}dicos}{21}
+\contentsline {subsection}{\numberline {2.2.2}En el \IeC {\'A}mbito del Desarrollo de Redes Teleinform\IeC {\'a}ticas}{23}
+\contentsline {section}{\numberline {2.3}Ingenier\IeC {\'\i }a de Software}{24}
+\contentsline {subsection}{\numberline {2.3.1}Proceso de Desarrollo del Software}{25}
+\contentsline {subsection}{\numberline {2.3.2}Principios de Dise\IeC {\~n}o y Desarrollo}{26}
+\contentsline {subsection}{\numberline {2.3.3}Proceso de Desarrollo de Software de C\IeC {\'o}digo Abierto}{28}
+\contentsline {subsubsection}{M\IeC {\'e}todos Ligeros}{31}
+\contentsline {subsubsection}{Proceso Unificado}{33}
+\contentsline {section}{\numberline {2.4}UML: Lenguaje de Modelado Unificado}{37}
+\contentsline {section}{\numberline {2.5}Portales de Informaci\IeC {\'o}n y Conocimiento}{38}
+\contentsline {subsection}{\numberline {2.5.1}Beneficios y obst\IeC {\'a}culos para la implementaci\IeC {\'o}n de portales basados en aplicaciones web.}{39}
+\contentsline {subsection}{\numberline {2.5.2}Ciclo de Vida de los Portales}{40}
+\contentsline {subsection}{\numberline {2.5.3}Aplicaciones Web}{41}
+\contentsline {section}{\numberline {2.6}Aspectos Claves en la Gesti\IeC {\'o}n y Direcci\IeC {\'o}n del Conocimiento}{43}
+\contentsline {subsection}{\numberline {2.6.1}Acerca del conocimiento}{43}
+\contentsline {subsection}{\numberline {2.6.2}Ciclo de Conocimiento}{44}
+\contentsline {subsection}{\numberline {2.6.3}Tecnolog\IeC {\'\i }as del Conocimiento}{45}
+\contentsline {subsection}{\numberline {2.6.4}Gesti\IeC {\'o}n de conocimiento}{47}
+\contentsline {subsubsection}{Sistemas de Gesti\IeC {\'o}n de Conocimiento}{48}
+\contentsline {subsubsection}{Sistemas Integrados para el Soporte de Desempe\IeC {\~n}o}{49}
+\contentsline {chapter}{\numberline {3}Sistema de Informaci\IeC {\'o}n para Proyectos de Telemedicina}{51}
+\contentsline {section}{\numberline {3.1}Caracter\IeC {\'\i }sticas innovadoras del SITEM}{53}
+\contentsline {section}{\numberline {3.2}Arquitectura del Sistema}{53}
+\contentsline {subsection}{\numberline {3.2.1}Subsistema Entidades de Salud}{54}
+\contentsline {subsection}{\numberline {3.2.2}Subsistema Tecnolog\IeC {\'\i }as de Interconexi\IeC {\'o}n}{54}
+\contentsline {subsection}{\numberline {3.2.3}Subsistema Equipos y Tecnolog\IeC {\'\i }as}{56}
+\contentsline {subsection}{\numberline {3.2.4}Subsistema Operadores de Telecomunicaciones}{56}
+\contentsline {subsection}{\numberline {3.2.5}Subsistema Organizaciones y Proyectos}{57}
+\contentsline {subsection}{\numberline {3.2.6}Subsistema Servicios M\IeC {\'e}dicos}{57}
+\contentsline {subsection}{\numberline {3.2.7}Subsistemas Entornos de Aprendizaje}{57}
+\contentsline {section}{\numberline {3.3}Aspectos Relativos a la Fase de Transici\IeC {\'o}n}{59}
+\contentsline {subsection}{\numberline {3.3.1}Fuentes de Informaci\IeC {\'o}n Primaria}{61}
+\contentsline {chapter}{\numberline {4}Desarrollo del SITEM}{63}
+\contentsline {section}{\numberline {4.1}Modelos de Desarrollo del SITEM}{63}
+\contentsline {subsection}{\numberline {4.1.1}Modelo de Requisitos}{65}
+\contentsline {subsubsection}{Declaraci\IeC {\'o}n del Problema}{65}
+\contentsline {subsubsection}{Responsabilidades del Sistema}{66}
+\contentsline {subsubsection}{Definici\IeC {\'o}n de Alcances}{66}
+\contentsline {subsubsection}{Definici\IeC {\'o}n de actores}{67}
+\contentsline {subsubsection}{Casos de uso}{67}
+\contentsline {subsection}{\numberline {4.1.2}Modelo de An\IeC {\'a}lisis y Dise\IeC {\~n}o}{68}
+\contentsline {subsection}{\numberline {4.1.3}Modelo de Implementaci\IeC {\'o}n}{70}
+\contentsline {subsubsection}{Acerca de la Seguridad}{72}
+\contentsline {subsection}{\numberline {4.1.4}Modelo de Datos}{72}
+\contentsline {subsection}{\numberline {4.1.5}Interfaz gr\IeC {\'a}fica.}{75}
+\contentsline {subsubsection}{Arquitectura de la p\IeC {\'a}gina}{75}
+\contentsline {subsection}{\numberline {4.1.6}Entregables del proyecto}{78}
+\contentsline {chapter}{\numberline {A}Declaraci\IeC {\'o}n de Riesgos}{93}
+\contentsline {chapter}{\numberline {B}GNU General Public License}{97}
+\contentsline {section}{\numberline {B.1}PREAMBULO}{97}
+\contentsline {section}{\numberline {B.2}TERMINOS Y CONDICIONES PARA COPIA, MODIFICACION Y DISTRIBUCION }{98}
+\contentsline {chapter}{\numberline {C}Modelo de Requisitos}{104}
+\contentsline {section}{\numberline {C.1}Modelo de Casos de Uso}{104}
+\contentsline {subsection}{\numberline {C.1.1}Caracter\IeC {\'\i }sticas Generales de los Actores}{104}
+\contentsline {subsection}{\numberline {C.1.2}Casos de Usos}{105}
+\contentsline {chapter}{\numberline {D}Modelo de An\IeC {\'a}lisis y Dise\IeC {\~n}o}{114}
+\contentsline {section}{\numberline {D.1}Especificaciones de Casos de Usos}{114}
+\contentsline {chapter}{\numberline {E}Modelo de Implementaci\IeC {\'o}n}{126}
+\contentsline {section}{\numberline {E.1}C\IeC {\'o}digo Fuente del SITEM}{127}
+\contentsline {subsection}{\numberline {E.1.1}Clase P\IeC {\'a}gina}{127}
+\contentsline {chapter}{\numberline {F}Modelo de Datos}{130}
+\contentsline {chapter}{\numberline {G}Modelo de Despliegue}{132}
+\contentsline {chapter}{\numberline {H}Instrumento Preliminar para la Fase de Transici\IeC {\'o}n}{134}
+\contentsline {section}{\numberline {H.1}Presentaci\IeC {\'o}n}{134}
+\contentsline {subsection}{\numberline {H.1.1}Indicaciones Generales}{134}
+\contentsline {subsection}{\numberline {H.1.2}Contexto Cl\IeC {\'\i }nico}{135}
+\contentsline {subsubsection}{Unidades de Recolecci\IeC {\'o}n de Informaci\IeC {\'o}n}{136}
+\contentsline {subsection}{\numberline {H.1.3} Contexto de servicio / relaci\IeC {\'o}n con el entorno}{137}
+\contentsline {subsubsection}{Unidades de Recolecci\IeC {\'o}n de Informaci\IeC {\'o}n}{138}
+\contentsline {subsection}{\numberline {H.1.4}Consideraciones Tecnol\IeC {\'o}gicas}{139}
+\contentsline {subsubsection}{Unidades de Recolecci\IeC {\'o}n de Informaci\IeC {\'o}n}{139}
+\contentsline {subsection}{\numberline {H.1.5}Consideraciones de Calidad}{141}
+\contentsline {subsubsection}{Unidades de Recolecci\IeC {\'o}n de Informaci\IeC {\'o}n}{141}
+\contentsline {subsection}{\numberline {H.1.6}Aceptaci\IeC {\'o}n del servicio de salud brindado en la modalidad de telemedicina}{142}
+\contentsline {subsubsection}{Unidades de Recolecci\IeC {\'o}n de Informaci\IeC {\'o}n}{142}
+\contentsline {subsection}{\numberline {H.1.7}Aspectos de Construcci\IeC {\'o}n y Persistencia del sistema de telemedicina}{143}
+\contentsline {subsubsection}{Unidades de Recolecci\IeC {\'o}n de Informaci\IeC {\'o}n}{143}
+\contentsline {subsection}{\numberline {H.1.8}Pol\IeC {\'\i }ticas de la Organizaci\IeC {\'o}n}{144}
+\contentsline {subsection}{\numberline {H.1.9}Consideraciones acerca de la informaci\IeC {\'o}n}{145}
+\contentsline {subsubsection}{Unidades de Recolecci\IeC {\'o}n de Informaci\IeC {\'o}n}{145}
+\contentsline {subsection}{\numberline {H.1.10}Procesamiento de informaci\IeC {\'o}n}{146}
+\contentsline {subsubsection}{Unidades de Recolecci\IeC {\'o}n de Informaci\IeC {\'o}n}{146}
+\contentsline {chapter}{\numberline {I}Otros Entregables Nucleares del SITEM}{147}
+\contentsline {section}{\numberline {I.1}Visi\IeC {\'o}n - Resumen Ejecutivo}{147}
+\contentsline {subsection}{\numberline {I.1.1}Prop\IeC {\'o}sito}{147}
+\contentsline {subsection}{\numberline {I.1.2}Alcance}{148}
+\contentsline {subsection}{\numberline {I.1.3}Posicionamiento}{148}
+\contentsline {subsection}{\numberline {I.1.4}Participantes en el Proyecto y Usuarios}{149}
+\contentsline {subsection}{\numberline {I.1.5}Entorno de usuario}{149}
+\contentsline {subsection}{\numberline {I.1.6}Suposiciones y dependencias}{151}
+\contentsline {subsection}{\numberline {I.1.7}Descripci\IeC {\'o}n Global del SITEM}{151}
+\contentsline {subsection}{\numberline {I.1.8}Otros Requisitos del Producto}{151}
+\contentsline {subsection}{\numberline {I.1.9}Lineamientos de codificaci\IeC {\'o}n para la organizaci\IeC {\'o}n de los m\IeC {\'o}dulos}{152}
+\contentsline {chapter}{\numberline {J}Manual B\IeC {\'a}sico de Usuario}{153}

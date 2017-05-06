@@ -1,0 +1,459 @@
+\chapter{Modelo de Análisis y Diseño}
+\label{modelo_analisis}
+\section{Especificaciones de Casos de Usos}
+
+Para analizar en detalle los requerimientos del sistema se especifica mediante plantillas aquellos casos de uso que se consideran de importancia para el desarrollo base - conocidos como \textit{Casos de Uso Nucleares}. La tabla \ref{tabla_plantilla} muestra las secciones básicas que contiene un caso de uso. En aquellos casos de uso que una o varias secciones carezcan de contenido relevante se omiten por completo su declaración.
+
+\begin{table}
+\begin{center}
+\begin{tabular}{|l|p{10cm}|}
+\hline
+\textbf{Caso de Uso}&\\
+\hline
+Nombre & Nombre que identifica el caso de Uso usualmente es el mismo utilizado en el diagrama de Casos de Uso\\
+\hline
+Objetivo & Beneficio que obtiene el actor con la ejecución de este caso de uso.\\
+\hline
+Código Interno & Código único que identifica al Caso de Uso dentro del repositorio de artefactos.\\
+\hline
+Actores & Usuarios que intervienen en el caso de uso\\
+\hline
+Precondiciones & Estado en que debe encontrarse el SITEM antes de ejecutarse el caso de uso.\\
+\hline
+Flujo Básico & Flujo principal de actividades. Ambiente ideal.\\
+\hline
+Flujo Alternativo y de error & Actividades que bifurcan el flujo básico. Si existe más de un flujo alternativo este debe colocarse en una nueva fila.\\
+\hline
+Postcondiciones & Estado en que queda el SITEM después de ejecutado el caso de uso.\\
+\hline
+Puntos de Extensión & Secuencias de acciones que extienden el flujo del caso de uso.\\
+\hline
+\end{tabular}
+\caption{Plantilla Genérica para la Especificación de los Casos de Uso.}
+\label{tabla_plantilla} 
+\end{center}
+\end{table}
+
+
+\begin{table}
+\begin{center}
+\begin{tabular}{|l|p{10cm}|}
+\hline
+\textbf{Caso de Uso}&\\
+\hline
+Nombre & Registrarse en el SITEM\\
+\hline
+Objetivo & El actor logra crear una cuenta en el SITEM con un rol específico para poder trabajar en un subsistema dado.\\
+\hline
+Código Interno & UC-GENERAL-001 \\
+\hline
+Actores & Usuario General\\
+\hline
+Precondiciones & Ninguna.\\
+\hline
+Flujo Básico & 1. El usuario general selecciona la opción de nuevo usuario desde la página principal del SITEM.\\
+& 2. El SITEM muestra un formulario con los campos:\\
+& Nombres\\
+& Apellidos\\
+& Correo Electrónico\\
+& Teléfono\\
+& Nombre de Usuario\\
+& Clave\\
+& Reescriba la clave\\
+& Acceso Requerido\\
+& 3. El usuario diligencia uno a uno los campos requeridos y opcionales.\\
+& 4. El usuario envía los datos al SITEM.\\
+& 5. El SITEM verifica que los datos tengan los formatos esperados.\\
+& 6. El SITEM ingresa el registro a la base de datos colocando el campo de estado en 1 - registrado sin autorización.\\
+& 7. El SITEM redirecciona a la página de registro exitoso.\\
+& 8. El usuario acepta el mensaje.\\
+\hline
+Postcondiciones & Se agregó un registro en la base de datos con el campo de estado en 1.\\
+\hline
+Casos de uso relacionados&Seleccionar Rol en el SITEM\\
+\hline
+\end{tabular}
+\caption{Caso de Uso Registrarse en el SITEM}
+\label{casouso1} 
+\end{center}
+\end{table}
+
+\begin{table}
+\begin{center}
+\begin{tabular}{|l|p{10cm}|}
+\hline
+\textbf{Caso de Uso}&\\
+\hline
+Nombre & Administrar autorizaciones de Usuario\\
+\hline
+Objetivo & Proveer un mecanismo eficaz para que el administrador general del SITEM pueda gestionar el estado de autorización de los usuarios en los diferentes subsistemas.\\
+\hline
+Código Interno & UC-GENERAL-002 \\
+\hline
+Actores & Administrador\\
+\hline
+Precondiciones & Debe existir por lo menos un usuario registrado en el sistema diferente al administrador.\\
+& El administrador se encuentra correctamente autenticado y autorizado en el subsistema de administrador.\\
+\hline
+Flujo Básico & 1. El Administrador selecciona la opción Usuarios desde el menú principal del subsistema Administrador.\\
+& 2. El SITEM muestra un listado con los datos básicos de diferentes usuarios registrados:\\
+& Nombres\\
+& Apellidos\\
+& Correo Electrónico\\
+& Acceso Requerido\\
+& 3. \textit{Punto de Extensión} 1.\\
+& 4. \textit{Punto de Extensión} 2.\\
+& 5. El administrador verifica que los datos del usuario son reales.\\
+& 6. El administrador seleccionada la casilla de verificación y acepta el trámite.\\
+& 7. El SITEM procesa el formulario colocando el estado del usuario en valor 2 - Registrado y Autorizado.\\
+& 8. El SITEM indica con un mensaje el éxito en la operación de autorización.\\
+& 9. El SITEM envía un mensaje de texto al usuario indicando que ha sido autorizado.\\
+& 8. El Administrador acepta el mensaje de éxito.\\
+\hline
+Postcondiciones & Se cambia el valor en el campo estado del registro correspondiente al usuario.\\
+\hline
+Puntos de Extensión & 1:direccion=“avanzar” o direccion=“retroceder” extend Navegar en listado. \\
+& 2:Opción=“buscar” extend Busqueda condicional de registro. \\
+\hline
+\end{tabular}
+\caption{Caso de Uso Autorizar un usuario para acceder al SITEM}
+\label{casouso2} 
+\end{center}
+\end{table}
+
+\begin{table}
+\begin{center}
+\begin{tabular}{|l|p{10cm}|}
+\hline
+\textbf{Caso de Uso}&\\
+\hline
+Nombre & Generar Copia de Seguridad\\
+\hline
+Objetivo & Generar una copia de seguridad de los datos contenidos en la base de datos asociada al SITEM.\\
+\hline
+Código Interno & UC-GENERAL-003 \\
+\hline
+Actores & Administrador\\
+\hline
+Precondiciones & El administrador se encuentra correctamente autenticado y autorizado en el subsistema de administrador.\\
+\hline
+Flujo Básico & 1. El Administrador selecciona la opción Copia de Seguridad el menú principal del subsistema Administrador.\\
+& 2. El SITEM muestra un listado con las tablas opcionales para la copia de seguridad.\\
+& 3. El administrador selecciona la casilla de verificación de las tablas que desea sean copiadas.\\
+& 4. \textit{Punto de Extensión} 1.\\
+& 5. El administrador acepta la selección.\\
+& 6. El SITEM muestra un listado con las tablas que serán copiadas y un formulario con los campos:\\
+& Nombre del Archivo.\\
+& Ruta de Descarga.\\
+& 7. El usuario diligencia uno a uno los campos requeridos.\\
+& 8. El usuario envía los datos al SITEM.\\
+& 9. El SITEM realiza una copia de los registros escribiéndolos uno a uno en los archivos de destino.\\
+& 10. El SITEM redirecciona a la pagina de operación exitosa.\\
+& 11. El usuario acepta el mensaje.\\
+\hline
+Postcondiciones & Se crea n archivos en la carpeta de destino con el contenido de las n tablas seleccionadas para copia de seguridad.\\
+\hline
+Puntos de Extensión & 1:opcion=“todo” extend Seleccionar todos los cuadros.\\
+\hline
+\end{tabular}
+\caption{Caso de Uso realizar Copia de Seguridad}
+\label{casouso3} 
+\end{center}
+\end{table}
+
+\begin{table}
+\begin{center}
+\begin{tabular}{|l|p{10cm}|}
+\hline
+\textbf{Caso de Uso}&\\
+\hline
+Nombre & Elaborar Tablas de Análisis\\
+\hline
+Objetivo & Obtener un repositorio de análisis de algún componente del modelo jerárquico de seguimiento a proyectos.\\
+\hline
+Código Interno & UC-GENERAL-004 \\
+\hline
+Actores & Consultor\\
+\hline
+Precondiciones & Existe en el SITEM un modelo jerárquico de seguimiento a proyectos.\\
+\hline
+Flujo Básico & 1. El Consultor selecciona la opción Seguimiento desde el menú principal del subsistema Consultor.\\
+& 2. El SITEM muestra el modelo de seguimiento a proyectos con sus componentes de primer nivel.\\
+& 3. \textit{Punto de Extensión} 1.\\
+& 4. El Consultor selecciona la opción de Analizar para un componente.\\
+& 5. El SITEM muestra un formulario con los campos:\\
+& Valoración Cualitativa.\\
+& Valoración Cuantitativa.\\
+& Juicio.\\
+& Diagnóstico.\\
+& Fortalezas.\\
+& Oportunidades.\\
+& Debilidades.\\
+& Amenazas.\\
+& Directrices de Mejoramiento.\\
+& Directrices de Acción.\\
+& 6. El usuario diligencia uno a uno los campos requeridos y opcionales.\\
+& 8. El usuario envía los datos al SITEM.\\
+& 5. El SITEM verifica que los datos tengan los formatos esperados.\\
+& 6. El SITEM ingresa el registro a la base de datos.\\
+& 7. El SITEM redirecciona a la página de registro exitoso.\\
+& 8. El usuario acepta el mensaje.\\
+\hline
+Postcondiciones & Existe un registro de análisis asociado a un componente y un consultor.\\
+\hline
+Puntos de Extensión & 1:opcion=“mas” extend Mostrar Componentes de Nivel Inferior\\
+\hline
+\end{tabular}
+\caption{Caso de Uso Elaborar Tablas de Análisis}
+\label{casouso4} 
+\end{center}
+\end{table}
+
+\begin{table}
+\begin{center}
+\begin{tabular}{|l|p{10cm}|}
+\hline
+\textbf{Caso de Uso}&\\
+\hline
+Nombre & Ingresar una Entidad\\
+\hline
+Objetivo & Registrar una nueva entidad de Salud en el SITEM.\\
+\hline
+Código Interno & UC-GENERAL-005 \\
+\hline
+Actores & Entidad Salud\\
+\hline
+Precondiciones & El usuario Entidad Salud se encuentra autorizado y autenticado en el subsistema Entidades de Salud.\\
+\hline
+Flujo Básico & 1. Entidad Salud selecciona la opción Nueva Entidad desde el menú principal del subsistema Entidades de Salud.\\
+& 2. El SITEM muestra un formulario con los campos:\\
+& Nombre de la Entidad.\\
+&Nombre Corto.\\
+&Logosímbolo.\\
+&NIT.\\
+&Fecha de Fundación.\\
+&Dirección Principal.\\
+&Teléfono Principal (PBX).\\
+&Misión.\\
+&Visión.\\
+&Descripción.\\
+&Comentarios.\\
+& 3. El usuario diligencia uno a uno los campos requeridos y opcionales.\\
+& 4. El usuario envía los datos al SITEM.\\
+& 5. El SITEM verifica que los datos tengan los formatos esperados.\\
+& 6. El SITEM comprueba que no exista otra Entidad registrada con el mismo NIT.\\
+& 7. El SITEM ingresa el registro a la base de datos.\\
+& 8. El SITEM redirecciona a la página de registro exitoso.\\
+& 9. El usuario acepta el mensaje.\\
+\hline
+Flujo Alternativo & 5.A. Los datos no tienen el formato adecuado. \\
+& 6.A. El SITEM informa el error.\\
+& 7.A. \textit{Punto de Extensión} 1.\\
+\hline
+Flujo Alternativo & 6.A. Existe una entidad registrada con el mismo NIT. \\
+& 7.A. El SITEM informa el error.\\
+& 8.A. \textit{Punto de Extensión} 1.\\
+\hline
+Postcondiciones & Existe un registro de una entidad de salud.\\
+\hline
+Puntos de Extensión & 1:opcion=“corregir” extend Mostrar Formulario Corrección.\\
+\hline
+\end{tabular}
+\caption{Caso de Uso Ingresar una Nueva Entidad de Salud.}
+\label{casouso5} 
+\end{center}
+\end{table}
+
+\begin{table}
+\begin{center}
+\begin{tabular}{|l|p{10cm}|}
+\hline
+\textbf{Caso de Uso}&\\
+\hline
+Nombre & Consultar información básica de una entidad de Salud.\\
+\hline
+Objetivo & Obtener en pantalla los datos básicos de una entidad de salud.\\
+\hline
+Código Interno & UC-GENERAL-006 \\
+\hline
+Actores & Entidad Salud, usuario general\\
+\hline
+Precondiciones & El usuario se encuentra autorizado y autenticado en el subsistema Entidades de Salud.\\
+\hline
+Flujo Básico & 1. Entidad Salud selecciona la opción Entidades desde el menú principal del subsistema Entidades de Salud.\\
+& 2. El SITEM muestra un listado de 25 entidades ordenadas alfabéticamente por nombre.\\
+& 3. \textit{Punto de Extensión} 1.\\
+& 4. El usuario selecciona una entidad de salud desde el listado.\\
+& 5. El SITEM realiza una búsqueda con el id de la entidad.\\
+& 6. El SITEM muestra en pantalla el menú secundario para solicitar edición y los datos de la entidad:\\
+& Nombre de la Entidad.\\
+&Nombre Corto.\\
+&Logosímbolo.\\
+&NIT.\\
+&Fecha de Fundación.\\
+&Dirección Principal.\\
+&Teléfono Principal (PBX).\\
+&Misión.\\
+&Visión.\\
+&Descripción.\\
+& 7. El usuario acepta los datos.\\
+\hline
+Puntos de Extensión & 1:direccion=“avanzar” o direccion=“retroceder” extend Navegar en listado. \\
+\hline
+\end{tabular}
+\caption{Caso de Uso Consultar información básica de una entidad de Salud.}
+\label{casouso6} 
+\end{center}
+\end{table}
+
+\begin{table}
+\begin{center}
+\begin{tabular}{|l|p{10cm}|}
+\hline
+\textbf{Caso de Uso}&\\
+\hline
+Nombre & Editar un registro en el SITEM.\\
+\hline
+Objetivo & Editar la información que se encuentra en un registro del SITEM. La actualización puede involucrar más de una entidad en la capa de persistencia\\
+\hline
+Código Interno & UC-GENERAL-007\\
+\hline
+Actores & Profesional TIC, entidad salud, administrador, usuario general\\
+\hline
+Precondiciones & El usuario se encuentra autorizado y autenticado en el subsistema.\\
+\hline
+Flujo Básico & 1. El usuario selecciona la opción Editar Registro desde el menú secundario del subsistema.\\
+& 2. El SITEM muestra un formulario rellenado con los datos del registro correspondiente.\\
+& 3. El usuario editada los valores dentro de los controles del formulario.\\
+& 4. El usuario envia el formulaenvíal SITEM.\\
+& 5. El SITEM verifica que los datos editados no violen alguna regla de integridad referencial.\\
+& 6. El SITEM actualiza los registros en la capa de persistencia.\\
+& 7. El SITEM muestra al usuairo un mensausuarioxito.\\
+& 8. El usuario acepta el mensaje.\\
+\hline
+Flujo Alternativo & 5.A. Existe un error de integridad referencial. \\
+& 7.A. El SITEM informa el error.\\
+& 8.A. \textit{Punto de Extensión} 1.\\
+\hline
+Puntos de Extensión & 1:opcion=“corregir” extend Mostrar Formulario Corrección.\\
+\hline
+Postcondiciones & Se actualizan los registros correspondientes.\\
+\hline
+\end{tabular}
+\caption{Caso de Uso Editar un registro en el SITEM}
+\label{casouso7} 
+\end{center}
+\end{table}
+
+\begin{table}
+\begin{center}
+\begin{tabular}{|l|p{10cm}|}
+\hline
+\textbf{Caso de Uso}&\\
+\hline
+Nombre & Asociar un protocolo de comunicaciones al modelo OSI.\\
+\hline
+Objetivo & Asociar un protocolo de comunicaciones al modelo de referencia OSI.\\
+\hline
+Código Interno & UC-GENERAL-008\\
+\hline
+Actores & Profesional TIC, Tecnologías.\\
+\hline
+Precondiciones & El usuario se encuentra autorizado y autenticado en el subsistema.\\
+& Existe registrado por lo menos un protocolo de comunicaciones en el SITEM.\\
+\hline
+Flujo Básico & 1. El usuario selecciona la opción \textbf{Más Información} desde el menú secundario del subsistema.\\
+& 2. El SITEM muestra la información del protocolo asociada por áreas temáticas.\\
+& 3. El usuario selecciona la opción Clasificar OSI.\\
+& 4. El SITEM muestra el grafico de siete capgráficomodelo OSI.\\
+& 5. El usuario selecciona una o varias capas del modelo.\\
+& 6. El SITEM asocia el id del protocolo a cada una de las capas del modelo OSI seleccionadas por el usuario.\\
+& 7. El SITEM muestra el modelo OSI extendido con los demás protocolos registrados en cada capa.\\
+& 8. El usuario acepta el registro.\\
+\hline
+Flujo Alternativo & 5.A. El usuario no selecciona ninguna capa. \\
+& 7.A. El SITEM regresa al punto 2 del caso de uso.\\
+\hline
+Postcondiciones & El conjunto de protocolos asociados a una capa del modelo OSI se incrementa.\\
+\hline
+\end{tabular}
+\caption{Caso de Uso Asociar un protocolo de comunicaciones al modelo OSI.}
+\label{casouso8} 
+\end{center}
+\end{table}
+
+\begin{table}
+\begin{center}
+\begin{tabular}{|l|p{10cm}|}
+\hline
+\textbf{Caso de Uso}&\\
+\hline
+Nombre & Borrar un registro del SITEM.\\
+\hline
+Objetivo & Eliminar un registro en algún subsistema del SITEM garantizando que solo el experto en información lo realice y se mantenga la integridad referencial en los datos.\\
+\hline
+Código Interno & UC-GENERAL-009\\
+\hline
+Actores & Profesional TIC, Entidad Salud, Consultor, Administrador.\\
+\hline
+Precondiciones & El usuario se encuentra autorizado y autenticado en el subsistema.\\
+& Existe un registro en el SITEM.\\
+& El usuario a creado el registro y este no tiene información asociada.\\
+\hline
+Flujo Básico & 1. El usuario selecciona la opción \textbf{Eliminar Registro} desde el menú secundario del subsistema.\\
+& 2. El SITEM muestra un mensaje de conformación de eliminación con los datos básicos del registro.\\
+& 3. El usuario selecciona la opción de \textbf{Confirmar Borrado}.\\
+& 4. El SITEM elimina el registro cumpliento las restrcumpliendoe claves foraneas.\\
+& 5. El foráneasestra un mensaje indicando que el registro se ha borrado del sistema.\\
+& 6. El usuario acepta el mensaje.\\
+& 7. El SITEM redirecciona a la página en donde se encontraba el usuario antes del proceso de borrado.\\
+\hline
+Flujo Alternativo & 3.A. El usuario no acepta borrar el registro. \\
+& 4.A. Continua en el punto 7 del flujo principal.\\
+\hline
+Postcondiciones & El registro se borra del sistema.\\
+\hline
+\end{tabular}
+\caption{Caso de Uso para Borrar un registro en el SITEM.}
+\label{casouso9} 
+\end{center}
+\end{table}
+
+\begin{table}
+\begin{center}
+\begin{tabular}{|l|p{10cm}|}
+\hline
+\textbf{Caso de Uso}&\\
+\hline
+Nombre & Acceder a una página del SITEM.\\
+\hline
+Objetivo & Ingresar a una página específica dentro del sistema.\\
+\hline
+Código Interno & UC-GENERAL-010\\
+\hline
+Actores & Profesional TIC, Entidad Salud, Consultor, Administrador.\\
+\hline
+Precondiciones & El usuario está autorizado para acceder a la página.\\
+& La página se encuentra registrada en el SITEM.\\
+& La página tiene uno o más bloques asociados.\\
+\hline
+Flujo Básico & 1. El usuario elige un enlace a una página dentro del SITEM.\\
+& 2. El SITEM verifica que el usuario tiene una sesión  válida\\
+& 3. El SITEM rescata los valores de la página desde la base de datos.\\
+& 4. El SITEM verifica que el usuario tenga los privilegios necesarios para ingresar a la página.\\
+& 5. El SITEM consulta la estructura de la página desde la base de datos.\\
+& 6. El SITEM envía secuencialmente el código HTML correspondiente a cada una de los bloques que constituyen la página.\\
+& 7. El SITEM registra el acceso del usuario en la base de datos.\\
+& 8. El SITEM actualiza la información de sesión.\\
+\hline
+Flujo Alternativo & 4.A. El usuario no tiene los privilegios para ver la página. \\
+& 5.A. El SITEM registra un atento de ingreso ilegal.\\
+& 6.A. El SITEM muestra un mensaje informando el error.\\
+\hline
+Postcondiciones & El usuario ingresa a una página dentro del SITEM.\\
+\hline
+\end{tabular}
+\caption{Caso de Uso para Acceder a una página del SITEM.}
+\label{casouso10} 
+\end{center}
+\end{table}
