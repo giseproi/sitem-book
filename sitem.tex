@@ -1,18 +1,19 @@
 \documentclass[11pt]{report}
-\usepackage[spanish]{babel} % division de silabas en español.
-\usepackage{ucs}
-\usepackage[utf8x]{inputenc} %%%Para poner acentos directamente
-\usepackage[usenames]{color}
+\usepackage[spanish]{babel}	% Division de silabas en español.
+\selectlanguage{spanish}	% En caso de error instalar texlive-collection o texlive-lang
+\usepackage{ucs}		% Soporte para UNICODE
+\usepackage[utf8x]{inputenc}	% Para poner acentos directamente
+\usepackage[usenames]{color}    % Habilitar uso de colores por nombre
 \usepackage{color}
 \usepackage{colortbl}
-\usepackage{sidecap}
-\usepackage{appendix}
+\usepackage{sidecap}		% Capacidad de colocar leyendas al lado de las imágenes
+\usepackage{appendix}		
 \usepackage[letterpaper,left=3cm,top=3cm,right=3cm,bottom=3cm,nohead]{geometry} %Margenes
-\usepackage[dvips]{graphicx}
-\parindent=0in
-\setlength{\parskip}{0.5cm} %Espacio entre parrafos
-\sffamily % Familia de fuentes a utilizar por defecto en el documento
-\title{Sistema de Información para Proyectos de Telemedicina}
+\usepackage[dvips]{graphicx}	% Convertir las gráficas a formato Postscripts
+\parindent=0in			% Tamaño de la sangría 
+\setlength{\parskip}{0.5cm}	%Espacio entre parrafos
+\sffamily 			% Familia predeterminada de fuentes a utilizar en el documento
+\title{Sistema de Información para la Caracterización de Proyectos de e-salud}
 \author{Lilia Edith Aparicio - Paulo César Coronado}
 %\includeonly{proceso_desarrollo}
 \begin{document}
