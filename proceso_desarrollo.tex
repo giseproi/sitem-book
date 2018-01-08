@@ -1,32 +1,41 @@
-\chapter{Desarrollo del SITEM}
+\chapter{Experiencia de Desarrollo de openSITEM}
 
-El presente capítulo presenta algunos aspectos relativos al desarrollo de los componentes principales del SITEM - figura \ref{arquitectura_sitem}. Formula lineamientos básicos a los diferentes grupos de desarrollo pero, teniendo en cuenta que el proyecto se adhiere al manifiesto de los metodólogos “ágiles”, lo que sigue es tan solo una recomendación y cada grupo lo enriquece con sus propias experiencias. 
+El presente capítulo describe la experiencia de desarrollo en el equipo base de openSITEM y junto con la sección de \textit{proceso de desarrollo} se considera que define los lineamientos generales. Como se ha mencionado, openSITEM es centrado en la arquitectura y guiado por casos de uso; y tanto el desarrollador principal como los equipos de trabajo temporales, están comprometidos con la tarea de generar un aplicativo funcional que esté alineado - de manera emergente, con las vistas arquitectónicas planteadas.
 
-\begin{figure}
- \centering
- \includegraphics[width=108mm, height=174mm]{ArquitecturaGeneral.png}
- \caption{Subsistemas principales del SITEM}
- \label{arquitectura_sitem}
-\end{figure}
-\section{Modelos de Desarrollo del SITEM}
+Los artefactos se construyen de manera iterativa e incremental, y el ``orden'' en el que aquí se muestra no implica una secuencia de actividades. No en pocas ocasiones abordar la disciplina de \textit{Modelado de Dominio} se realiza a continuación de - o en paralelo a, un taller de requisitos y dicho taller surge de una nueva restricción detectada al momento de despliegue. Esta capacidad de adaptación al cambio es lo que ha permitido que openSITEM vaya realizando la transición desde un aplicativo específico a una suite escalable - potenciada por la arquitectura orientada a servicios que está implementando.
 
-Para la implementación del Sistema de Información en Telemedicina se siguen las fases de desarrollo contempladas en el Proceso Unificado y se desarrollan los flujos de trabajo en las disciplinas básicas de:
+Aclarado lo anterior, en la implementación de cada uno de los módulos de openSITEM se siguen las fases contempladas en el Proceso Unificado y se desarrollan flujos de trabajo en las disciplinas básicas de:
 \begin{itemize}
- \item Requisitos.
+\item Requisitos.
 \item Análisis.
 \item Diseño.
 \item Elaboración.
 \item Pruebas.
+\item Despliegue.
 \end{itemize}
 
 En cada fase se presentan resultados que permiten medir constantemente los avances en el proyecto, así como comprobar los niveles de calidad y la validez del método empleado. A partir de iteraciones continuas por las diferentes disciplinas se refinan constantemente los modelos.
 
 \subsection{Modelo de Requisitos}
 
-Los grupos de desarrollo en el SITEM\footnote{Cualquier nodo de desarrollo está a cargo de lo que se denomina genéricamente un \textit{grupo de desarrollo}. En general, un grupo de desarrollo en el SITEM no tiene un número de contribuyentes conocido.} deberán declarar explícitamente el concepto que da génesis a los diferentes componentes que desean abordar. Dicha declaración deberá ser coherente con los objetivos del SITEM y la filosofía del software libre, respetando siempre los principios constitucionales, la propiedad intelectual y el respeto al trabajo de los demás.
+El equipo base de openSITEM debe declarar explícitamente el requerimiento (o requerimientos) que da génesis a los elementos que se desean abordar. Dicha declaración debe ser coherente con los objetivos de openSITEM y la filosofía FLOSS, respetando siempre los principios constitucionales, la propiedad intelectual y el respeto al trabajo de los demás. Como puede deducirse, las contribuciones a la rama principal de openSITEM son de carácter burocrático basado en el análisis de los requerimientos de actualizaciones que realicen colaboradores que no pertenezcan el equipo base.
 
-\subsubsection{Declaración del Problema}
-Aunque en el ámbito colombiano como internacional existen estudios ampliamente conocidos acerca de la telemedicina, sus características, requerimientos, implicaciones y normatividad \cite{aparicio2003} \cite{bashshur77} \cite{bashshur95} \cite{oas2002}, la mayoría de ellos se encuentran disgregados y en idiomas diferentes al español por lo cual su consulta es compleja y no existe un mapa seguro de navegación que guíe al investigador hacia las fuentes confiables de información y este termina reinventando la rueda o, en el mejor de los casos, realizando un filtro interminable de información en donde lee, analiza y descarta datos – todo este trabajo tirado a la basura cuando otro investigador entra en escena y por falta de medios de socialización desconoce el trabajo del primero, iniciando un nuevo proceso.
+\subsubsection{Gestión del Contexto Problémico}
+
+El contexto problémico de openSITEM está en constante redefinición. La línea base que se presenta a continuación marca el final de la caracterización que dio lugar a la tercera fase del proyecto y se constituye en el punto de partida para posteriores versiones.
+
+
+\subsection{Línea base del Contexto Problémico}
+
+Durante más de tres décadas se han realizado estudios relacionados con la telesalud, sus características, requerimientos, implicaciones, componentes y normatividad \cite{currie2014} \cite{aparicio2003} \cite{ross2016} \cite{bashshur95} \cite{oas2002} \cite{lewis2013}. Sin embargo, la mayoría de ellos se encuentran disgregados y en idiomas diferentes al español por lo cual su consulta es compleja y no existe un mapa de navegación especializado que guíe al investigador hacia las fuentes de información y este termina reinventando la rueda o, en el mejor de los escenarios, realizando un filtro interminable de información en donde lee, analiza y descarta datos – todo este trabajo tirado a la basura cuando otro investigador entra en escena y por falta de medios de socialización (y representación de conocimiento) desconoce el trabajo del primero, iniciando un nuevo proceso.
+
+
+
+
+
+
+
+
 
 Datos básicos de enlaces, grupos de investigación, proyectos e información técnica en telemedicina ha sido consignada en sendas tesis que, aunque completas en el estudio, no ofrecen la pertinencia y eficacia necesaria para el ambiente investigativo. 
 
@@ -55,15 +64,15 @@ El Sistema de Información en Telemedicina debe ser una herramienta de apoyo al 
 
 \subsubsection{Definición de Alcances}
 
-El SITEM es principalmente \textit{un concepto}, su estado actual es una representación del potencial real del sistema que debe ser socializado y entregado a la comunidad. La base de desarrollo principal es el grupo GITEM y será responsable de la versión oficial del producto. Sin embargo, dada la dinámica en el mundo del software libre, el grupo GITEM no limitará el trabajo independiente que sobre su desarrollo realice cualquier persona o grupo de personas. En este sentido la funcionalidad original del sistema podrá ser modificada pero no avalada directamente por el grupo.\footnote{Salvo en casos en que no se trasgredan directamente los objetivos primarios del desarrollo. En tales casos las contribuciones serán asociadas al hilo oficial de desarrollo.}. 
+El openSITEM es principalmente \textit{un concepto}, su estado actual es una representación del potencial real del sistema que debe ser socializado y entregado a la comunidad. La base de desarrollo principal es el grupo GITEM y será responsable de la versión oficial del producto. Sin embargo, dada la dinámica en el mundo del software libre, el grupo GITEM no limitará el trabajo independiente que sobre su desarrollo realice cualquier persona o grupo de personas. En este sentido la funcionalidad original del sistema podrá ser modificada pero no avalada directamente por el grupo.\footnote{Salvo en casos en que no se trasgredan directamente los objetivos primarios del desarrollo. En tales casos las contribuciones serán asociadas al hilo oficial de desarrollo.}. 
 
-El SITEM ha sido creado con el fin de apoyar a los grupos de trabajo que realizan labores en el área de proyección de sistemas de telemedicina. La información que en él se encuentra debe ser ingresada por personas autorizadas para asegurar en un alto grado la veracidad e idoneidad de la misma. Sin embargo no se puede garantizar, y no se garantiza, la exactitud, disponibilidad, integridad y oportunidad de dicha información: \textit{la información contenida en el sitem no es una fuente oficial de datos}. El uso de la misma es responsabilidad de quien lo realiza. La información que se encuentre en el SITEM no ha sido necesariamente revisada por expertos profesionales. Todos los contenidos que se ingresen al SITEM deben ser de licencia pública o de libre uso; los contenidos que no cumplan estos criterios serán eliminados.
+El openSITEM ha sido creado con el fin de apoyar a los grupos de trabajo que realizan labores en el área de proyección de sistemas de telemedicina. La información que en él se encuentra debe ser ingresada por personas autorizadas para asegurar en un alto grado la veracidad e idoneidad de la misma. Sin embargo no se puede garantizar, y no se garantiza, la exactitud, disponibilidad, integridad y oportunidad de dicha información: \textit{la información contenida en el sitem no es una fuente oficial de datos}. El uso de la misma es responsabilidad de quien lo realiza. La información que se encuentre en el openSITEM no ha sido necesariamente revisada por expertos profesionales. Todos los contenidos que se ingresen al openSITEM deben ser de licencia pública o de libre uso; los contenidos que no cumplan estos criterios serán eliminados.
 
 \subsubsection{Definición de actores}
 
-El SITEM por su complejidad debe gestionar varios tipos de usuarios, cada uno con características específicas. Este tratamiento especial tiene que ver con el mantenimiento de la integridad de la información, la cual solo puede ser gestionada por un grupo selecto de usuarios. 
+El openSITEM por su complejidad debe gestionar varios tipos de usuarios, cada uno con características específicas. Este tratamiento especial tiene que ver con el mantenimiento de la integridad de la información, la cual solo puede ser gestionada por un grupo selecto de usuarios. 
 
-Algunos actores esperados en el SITEM son:
+Algunos actores esperados en el openSITEM son:
 
 \begin{itemize}
 \item Administrador.
@@ -77,7 +86,7 @@ Cada uno de ellos con las características mostradas en el anexo \ref{modelo_req
 
 \subsubsection{Casos de uso}
 
-Los requisitos funcionales del SITEM son declarados en diferente nivel de detalle por medio de una especificación de casos de uso, diagramas de comportamiento y de interacción. Como mínimo, al caracterizar un flujo de eventos por medio de un caso de uso se espera tener información acerca de:
+Los requisitos funcionales del openSITEM son declarados en diferente nivel de detalle por medio de una especificación de casos de uso, diagramas de comportamiento y de interacción. Como mínimo, al caracterizar un flujo de eventos por medio de un caso de uso se espera tener información acerca de:
 
 \begin{itemize}
 \item Nombre del Caso de Uso
@@ -98,9 +107,9 @@ La tabla \ref{casouso}, muestra el caso de uso de diseño correspondiente al flu
 \hline
 \textbf{Caso de Uso}&\\
 \hline
-Nombre & Registrarse en el SITEM\\
+Nombre & Registrarse en el openSITEM\\
 \hline
-Objetivo & El actor logra crear una cuenta en el SITEM con un rol específico para poder trabajar en un subsistema dado.\\
+Objetivo & El actor logra crear una cuenta en el openSITEM con un rol específico para poder trabajar en un subsistema dado.\\
 \hline
 Código Interno & UC-GENERAL-001 \\
 \hline
@@ -108,8 +117,8 @@ Actores & Usuario General\\
 \hline
 Precondiciones & Ninguna.\\
 \hline
-Flujo Básico & 1. El usuario general selecciona la opción de nuevo usuario desde la página principal del SITEM.\\
-& 2. El SITEM muestra un formulario con los campos:\\
+Flujo Básico & 1. El usuario general selecciona la opción de nuevo usuario desde la página principal del openSITEM.\\
+& 2. El openSITEM muestra un formulario con los campos:\\
 & Nombres\\
 & Apellidos\\
 & Correo Electrónico\\
@@ -119,18 +128,18 @@ Flujo Básico & 1. El usuario general selecciona la opción de nuevo usuario des
 & Reescriba la clave\\
 & Acceso Requerido\\
 & 3. El usuario diligencia uno a uno los campos requeridos y opcionales.\\
-& 4. El usuario envía los datos al SITEM.\\
-& 5. El SITEM verifica que los datos tengan los formatos esperados.\\
-& 6. El SITEM ingresa el registro a la base de datos colocando el campo de estado en 1 - registrado sin autorización.\\
-& 7. El SITEM redirecciona a la página de registro exitoso.\\
+& 4. El usuario envía los datos al openSITEM.\\
+& 5. El openSITEM verifica que los datos tengan los formatos esperados.\\
+& 6. El openSITEM ingresa el registro a la base de datos colocando el campo de estado en 1 - registrado sin autorización.\\
+& 7. El openSITEM redirecciona a la página de registro exitoso.\\
 & 8. El usuario acepta el mensaje.\\
 \hline
 Postcondiciones & Se agregó un registro en la base de datos con el campo de estado en 1.\\
 \hline
-Casos de uso relacionados&Seleccionar Rol en el SITEM\\
+Casos de uso relacionados&Seleccionar Rol en el openSITEM\\
 \hline
 \end{tabular}
-\caption{Caso de Uso Registrarse en el SITEM}
+\caption{Caso de Uso Registrarse en el openSITEM}
 \label{casouso} 
 \end{center}
 \end{table}
@@ -166,7 +175,7 @@ En la figura \ref{secuencia}, se muestra el diagrama de interacción correspondi
 
 \subsection{Modelo de Implementación}
 
-El conjunto de diagramas del Anexo \ref{modelo_analisis} brinda la información fundamental para el modelo de implementación. En el SITEM se agrupan los diferentes componentes en la jerarquía de carpetas mostrada en la figura \ref{carpetas_sitem}.
+El conjunto de diagramas del Anexo \ref{modelo_analisis} brinda la información fundamental para el modelo de implementación. En el openSITEM se agrupan los diferentes componentes en la jerarquía de carpetas mostrada en la figura \ref{carpetas_sitem}.
 
 Cada una de las carpetas contiene los ficheros de código fuente del producto:
 
@@ -174,20 +183,20 @@ Cada una de las carpetas contiene los ficheros de código fuente del producto:
  \item \textbf{Clases:} Contiene los archivos en PHP que implementan las clases. 
 \item \textbf{Funciones:} Grupo de funciones en JavaScript para la validación de información en el nodo de usuario. En la actualidad la fase IV contempla complementar esta aproximación con la utilización de AJAX.
 \item \textbf{Configuración:} Alberga el archivo \textit{config.inc.php} que guarda las variables de ingreso a la base de datos. Dichas variables se encuentran codificadas de acuerdo al algoritmo que se seleccione (o implemente) desde la clase \textit{codificar}.
-\item \textbf{Bloques:} Agrupa el código fuente de cada bloque desarrollado en el SITEM. Un bloque se define como una unidad de funcionalidad independiente que puede utilizarse en cualquier página.
-\item \textbf{Estilo:} Información acerca de los parámetros generales de estilo - tamaño de fuente, color de bordes, fondos, colores de letras, etc; para diferentes componentes del SITEM. La modificación o inclusión de parámetros afectará la interfaz global del sistema. Actualmente los estilos en el SITEM se basan en hojas de estilo CSS.
+\item \textbf{Bloques:} Agrupa el código fuente de cada bloque desarrollado en el openSITEM. Un bloque se define como una unidad de funcionalidad independiente que puede utilizarse en cualquier página.
+\item \textbf{Estilo:} Información acerca de los parámetros generales de estilo - tamaño de fuente, color de bordes, fondos, colores de letras, etc; para diferentes componentes del openSITEM. La modificación o inclusión de parámetros afectará la interfaz global del sistema. Actualmente los estilos en el openSITEM se basan en hojas de estilo CSS.
 \item \textbf{Gráficos:} Todos los archivos gráficos usados en el proyecto.
 \item \textbf{Documentos:} Carpeta inicialmente vacía que se utiliza para guardar los archivos que los usuarios caragen a través del protocolo HTTP. Por seguridad se recomienda que esta carpeta se encuentre fuera del directorio en donde se encuentra instalada la aplicación.
 \item \textbf{Instalar:} Contiene el instalador del producto. Esta carpeta debería ser retirada una vez el sitio se encuentre en producción.
 \item \textbf{Desarrollo:} Con varios scripts que facilitan la tarea de desarrollo y adaptación de bloques en el sistema. Estos scripts se han construidos pensando en plataformas de desarrollo y prueba por lo que se supone no debe encontrarse en plataformas de producción.
 \end{itemize}
 
-En todo caso, durante el proceso de instalación se puede - y recomienda; asociar nuevos nombres a las carpetas por lo que en teoría ningún desarrollo basado en el SITEM que esté en etapa de producción debería tener nombres de carpetas conocidos.
+En todo caso, durante el proceso de instalación se puede - y recomienda; asociar nuevos nombres a las carpetas por lo que en teoría ningún desarrollo basado en el openSITEM que esté en etapa de producción debería tener nombres de carpetas conocidos.
 
 \begin{figure}
  \centering
  \includegraphics[width=156mm, height=156mm]{carpetas.png}
- \caption{Carpetas que se distribuyen con el SITEM}
+ \caption{Carpetas que se distribuyen con el openSITEM}
  \label{carpetas_sitem}
 \end{figure}
 
@@ -196,7 +205,7 @@ El uso lenguajes de scripts en el lado del servidor puede tener algunos problema
 
 En cuanto a la integridad de los datos se tiene un modelo de comparación de contenidos que se activa cada periodo de tiempo, el cual es programable; proponiéndose mantener una copia de respaldo verificada y avalada por el administrador. En caso de corrupción o pérdida de datos se mantiene una lista completa de los usuarios del sistema de hasta 1'000.000 de sesiones de tipo desplazamiento en donde el usuario más antiguo es descartado para la inclusión del nuevo cuando el tamaño asignado es completado, asegurándose así el manejo eficiente de disco.
 
-Por ningún motivo se permite el acceso a sitios restringidos a usuarios que no hayan sido plenamente identificados en el sistema. En sitios críticos se hace una revisión de los datos de acceso guardados en cookies o se constata los datos de inicio de sesión. Se han evitado al máximo los usos de carácter comodín y todos los accesos a la base de datos son validados en su sintaxis. El SITEM actualmente propone el uso de protocolos seguros tales como SSL o SHTML.
+Por ningún motivo se permite el acceso a sitios restringidos a usuarios que no hayan sido plenamente identificados en el sistema. En sitios críticos se hace una revisión de los datos de acceso guardados en cookies o se constata los datos de inicio de sesión. Se han evitado al máximo los usos de carácter comodín y todos los accesos a la base de datos son validados en su sintaxis. El openSITEM actualmente propone el uso de protocolos seguros tales como SSL o SHTML.
 
 Vale la pena destacar el uso de metodologías de autenticación de usuario basado en sesiones y codificación de datos que permiten ofrecer un contenido personalizado de acuerdo al perfil de cada uno de los clientes del sistema.
 
@@ -210,20 +219,20 @@ Vale la pena destacar el uso de metodologías de autenticación de usuario basad
 
 \subsection{Modelo de Datos}
 
-Dentro del proceso de desarrollo del SITEM el modelado y elaboración del sistema de bases de datos es una de las partes fundamentales de la propuesta. Se ha venido estructurando el modelo de acuerdo a las necesidades de cada módulo en particular para garantizar la independencia entre ellos en cada una de las capas, incluyendo la de persistencia.
+Dentro del proceso de desarrollo del openSITEM el modelado y elaboración del sistema de bases de datos es una de las partes fundamentales de la propuesta. Se ha venido estructurando el modelo de acuerdo a las necesidades de cada módulo en particular para garantizar la independencia entre ellos en cada una de las capas, incluyendo la de persistencia.
 
 Dependiendo de las caracterísitcas de cada subsistemas se implementan o no políticas transaccionales. El modelo de seguridad en los datos hereda todos los elementos del servidor tales como bloqueos de puertos, ocultación de ventanas, manejo de sockets, etc; además, un esquema lógico de validación por conexiones persistentes complementa estas características.
 
 El anexo \ref{modelo_datos} contiene los diagramas de clases que describen la arquitectura de datos del sistema y cada uno de sus subsistemas asociados. 
 
-En la actualidad el SITEM acepta bases de datos PostgreSQL, MySQL y ORACLE. La capa de persistencia del hilo principal se despliega sobre un servidor MySQL 5.0.27-standard.
+En la actualidad el openSITEM acepta bases de datos PostgreSQL, MySQL y ORACLE. La capa de persistencia del hilo principal se despliega sobre un servidor MySQL 5.0.27-standard.
 
 
 \subsection{Interfaz gráfica.}
 
-De acuerdo a los diagramas conceptuales del portal GITEM y del SITEM. Se han utilizado para la creación de las páginas los conceptos de diseño web enumerado por (Maldonado,2001), intentando evitar al máximo las páginas sobrecargadas de información. La navegación es guiada mediante enlaces dentro de las mismas páginas las cuales están agrupadas temáticamente logrando una coherencia en el contenido. 
+De acuerdo a los diagramas conceptuales del portal GITEM y del openSITEM. Se han utilizado para la creación de las páginas los conceptos de diseño web enumerado por (Maldonado,2001), intentando evitar al máximo las páginas sobrecargadas de información. La navegación es guiada mediante enlaces dentro de las mismas páginas las cuales están agrupadas temáticamente logrando una coherencia en el contenido. 
 
-Los gráficos han sido optimizados y su inclusión es necesaria para dar ayuda visual al contenido basado en texto. Teniendo en cuenta que el SITEM esta diseñado para interactuar permanentemente y por periodos prolongados de tiempo con el cliente, se han evitado deliberadamente la utilización  de componentes dinámicos tales como películas en flash, gif animados o menús desplegables. No obstante, el diseño no pierde atractivo ya que su implementación se fundamenta en estudios técnicos de comportamiento humano cuando navegan por Internet.
+Los gráficos han sido optimizados y su inclusión es necesaria para dar ayuda visual al contenido basado en texto. Teniendo en cuenta que el openSITEM esta diseñado para interactuar permanentemente y por periodos prolongados de tiempo con el cliente, se han evitado deliberadamente la utilización  de componentes dinámicos tales como películas en flash, gif animados o menús desplegables. No obstante, el diseño no pierde atractivo ya que su implementación se fundamenta en estudios técnicos de comportamiento humano cuando navegan por Internet.
 
 Para reducir el tiempo de acceso al portal, sobre todo cuando se trabaja con conexiones lentas, se da la posibilidad en algunos subsistemas de descargar en formato PDF todo el contenido del grupo de páginas en donde se este ubicado.
 
@@ -234,14 +243,14 @@ Independiente del subsistema que nos encontremos las páginas siempre están com
 \begin{figure}
  \centering
  \includegraphics[width=156mm, height=156mm]{secciones.png}
- \caption{Arquitectura de una página en el SITEM}
+ \caption{Arquitectura de una página en el openSITEM}
  \label{secciones}
 \end{figure}
 
 \begin{figure}
  \centering
  \includegraphics[width=156mm, height=156mm]{seccion_colapsada.png}
- \caption{Página del SITEM en donde la Sección D se ha colapsado.}
+ \caption{Página del openSITEM en donde la Sección D se ha colapsado.}
  \label{seccion_colapsada}
 \end{figure}
 
@@ -257,9 +266,9 @@ Dentro de este modelo se tienen dos vistas claras: la del negocio y la del siste
 
 \item \textbf{Modelo de Objetos.} El cual describe la forma en que cada requerimiento – o contrato,  es cumplido. Establece las entidades internas, la información que intercambian y los flujos de trabajo que logran el cumplimiento de los requisitos. Los grafos correspondientes podrán incluir diagramas estáticos o interactivos expresados en UML.
 
-\item \textbf{Glosario.} Que es el único artefacto válido de consulta para la terminología usada en el desarrollo del SITEM. Ver el anexo \ref{glosario}.
+\item \textbf{Glosario.} Que es el único artefacto válido de consulta para la terminología usada en el desarrollo del openSITEM. Ver el anexo \ref{glosario}.
 
-\item \textbf{Visión.} Este documento define la visión del SITEM. Es de todos el que marca las pautas conceptuales. 
+\item \textbf{Visión.} Este documento define la visión del openSITEM. Es de todos el que marca las pautas conceptuales. 
 
 \item \textbf{Especificaciones Adicionales.} Este documento capturará todos los requisitos que no han sido incluidos como parte de los casos de uso y se refieren requisitos no-funcionales globales. Dichos requisitos incluyen: requisitos legales o normas, aplicación de estándares, requisitos de calidad del producto, tales como: confiabilidad, desempeño, etc., u otros requisitos de ambiente, tales como: sistema operativo, requisitos de compatibilidad, etc. 
 
