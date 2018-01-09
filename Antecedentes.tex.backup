@@ -94,20 +94,26 @@ Los alcances de esta fase fueron:
 
 \subsection{OpenSITEM – Fase III}
 
-La fase III se corresponde a las fases de elaboración y construcción definidas en OpenUP \cite{balduino2010}. Para poder concretar la visión el grupo toma una decisión arquitectónica importante y concentra su esfuerzo en un motor de integración de aplicaciones, cuyo objetivo es la federación de sistemas existentes de software libre o código abierto (FLOSS). De esta manera se logra un mayor nivel funcional del que se había poder alcanzado de seguir con un desarrollo 100\% in-house. Con esto se busca el aseguramiento de la calidad en el desarrollo, la interoperabilidad, escalabilidad y el uso extensivo de soluciones consolidadas de software libre o de código abierto. 
+La fase III, cuyos resultados se detallan en este documento, se corresponde a las fases de elaboración y construcción definidas en OpenUP
 
-Para recalcar la adopción de la filosofía del código abierto todo el código generado se gestiona en un repositorio público en la plataforma GitHub. De manera complementaria y considerando el producto de manera integral, se elaboran diferentes artefactos y se formaliza las áreas de capacitación a partir de ciclos genéricos de transferencia de conocimiento apoyados en tecnologías de la información.
 
-Es precisamente esta fase la que da vida a este documento, a una arquitectura emergente y una versión 1.0 del sistema denominada \textit{OpenSITEM}, con la que el grupo entrega un sistema complejo constituido por un motor de federación (basado en OpenSARA, un framework de desarrollo para aplicaciones web desarrollado por el grupo) que articula las herramientas externas Knowage, ERPNext, Alfresco Community, CAMUNDA y OpenProject, así como varias herramientas propias tales como:
+
+
+
+
+
+En esta fase el grupo toma una decisión arquitectónica importante y concentra su esfuerzo en el motor de integración de aplicaciones, cuyo objetivo es la federación de sistemas existentes de software libre o código abierto (FLOSS) con el objetivo de lograr un mayor nivel funcional del que se había alcanzado en las fases anteriores. Se trata de buscar el aseguramiento de la calidad en el desarrollo, la interoperabilidad, escalabilidad y el uso extensivo de FLOSS. Se documenta todas las etapas involucradas en la creación de la aplicación para que sirva de plantilla a sistemas relacionados y se formaliza las áreas de capacitación a partir de ciclos genéricos de transferencia de conocimiento apoyados en tecnologías de la información.
+
+Es precisamente esta fase la que da vida a este documento, a una arquitectura emergente y una versión 1.0 del sistema denominada \textit{OpenSITEM}, con la que el grupo entrega un sistema complejo constituido por un motor de federación - basado en SARA un framework de desarrollo para aplicaciones web desarrollado por el grupo - que articula las herramientas externas Knowage, ERPNext, Alfresco Community, CAMUNDA y OpenProject, así como varias herramientas propias tales como:
 
 \begin{itemize}
 \item Sistema Integrado de Evaluación
 \item Sistema de Gestión de Redes de Práctica y Colaboración
 \item Sistema de agentes notificadores y de recomendación
-\item Sistema de Información Geográfica 3D.
+\item Sistema de Información Geográfica 3D basado en Cesium.
 \end{itemize}
 
-De esta forma OpenSITEM se convierte en una solución que abarca diferentes dominios pero con capacidad de adaptación para el propósito específico de las necesidades del proyecto \textit{Sistema Federado de Aplicaciones para la Caracterización de Proyectos de e-salud}.
+De esta forma SITEM se convierte en una compleja solución que abarca diferentes dominios, con capacidad de adaptación para un propósito específico. En particular, la fase III se concentra en la configuración de OpenSITEM como \textit{Sistema de Información para la Caracterización de Proyectos de eSalud}.
 
 
 \begin{figure}
@@ -116,3 +122,64 @@ De esta forma OpenSITEM se convierte en una solución que abarca diferentes domi
  \caption{Sistema de Información para la Caracterización de Proyectos de eSalud. Interfaz de Usuario en la Fase III}
  \label{sitem_faseIII}
 \end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Problemas asociados con malas interpretaciones del concepto de \textit{licencia a perpetuidad} del software propietario, plantearon la necesidad de realizar investigación relacionada con el desarrollo de software distribuido, interoperable y robusto basado en la filosofía del software libre y del código abierto- es decir, que abordara sus potencialidades y encarara sus debilidades en un entorno de trabajo de corte industrial. Bajo este enfoque nació SITEM.
+
+SITEM es un proyecto de investigación asociado a un holotipo proyectivo\cite{hurtado2000}, que tiene como impacto esperado el apoyo a labores de consultoría y diseño de redes de eSalud. Se desarrolla con un método de trabajo que surge de la metodología de OpenUP\cite{balduino2010} en donde se prioriza las disciplinas de Requisitos y Arquitectura, teniendo en cuenta el riesgo que se tiene en el grupo de investigación para consolidar equipos de trabajo por periodos de tiempo superiores a tres meses.
+
+
+
+\begin{figure}
+ \centering
+ \includegraphics[width=156mm, height=195mm]{modelo_fases.png}
+ \caption{Aproximación incremental a un sistema de Gestión de Conocimiento}
+ \label{modelo1}
+\end{figure}
+
+El grupo plantea un modelo general en donde los objetivos de producir datos, consumir información y compartir conocimiento en el área de interés, será alcanzado en varias fases\footnote{A través del presente documento se utilizan los términos de fase en el proceso investigativo y fases del Proceso de Desarrollo del Sistema Software. Las dos se suponen diferentes y su interpretación e importancia están asociados al contexto en el que se ubican.} de las cuales este documento describe aquellas que han culminado.
+
+La figura \ref{modelo1} muestra el proceso de estructuración del sistema como una sucesión de fases que generan dimensiones de datos, información y conocimiento de un componente. El sistema visto como un \textit{holos} presenta al investigador una gran cantidad de datos que en la medida que se descubren, recolectan, observan y registran se vuelven susceptibles de ser descritos, analizados, integrados y comparados (información), acercándose a un conocimiento refinado. El carácter de discernible - el momento en que las dimensiones se solapan en grado sumo, se evidencia con el aumento colectivo de especialización en la materia y en nuestro caso, con el grado de inmersión que los usuarios del SITEM tengan a partir de la liberación de la versión 1.0 estable (diciembre de 2017). 
+
+
+En el transcurso de las fases \textit{solo se manejan ciertos aspectos} que incrementalmente refinan el modelo del sistema, con base en las diferentes \textit{mórulas} de datos, información y conocimiento generadas. Aunque en el gráfico se muestra un tanto discretos y exactos, los límites existentes entre las tres mórulas principales - datos, información, conocimiento; son en la realidad difusos. Si se consideran los aspectos meramente técnicos del SITEM se corre el riesgo inminente de diseminación en regiones poco profundas del sistema - dispersión en la mórula de datos - razón por la cual la herramienta software se ha convertido en un artefacto intermedio y no en el fin último de la investigación.
+
+
+
+
+
+
+
+Esta fase se definió un modelo de negocios que lograba mostrar las interrelaciones que tendría el sistema con los proyectos del grupo y un conjunto representativo de portales relacionados temáticamente, encontrando \textit{un costo de oportunidad adecuado ya que en la actualidad ningún portal se especializa en el proceso de diagnóstico de capacidad para la implementación de eSalud.} No obstante, al momento de emprender el desarrollo, el grupo de investigación no contaba con los recursos mínimos requeridos por lo cual la propuesta y su implementación no pasó de ser un prototipo de baja funcionalidad. 
