@@ -17,20 +17,11 @@ Diferentes organizaciones \cite{ops2011},\cite{oms2016}, \cite{ituoms2012}, han 
 
 Los primeros resultados del estudio de campo mostraron que un servicio - con posibilidad de ser implementado en un modelo de eSalud, requiere de la integración jerárquica de nodos. En OpenSITEM existen dos tipos de nodos: (1) atómicos: aquellos que ofrecen un servicio cohesivo que no abarca un caso de uso de dominio  y (2) agregados: que articulan nodos (atómicos o agregados) para brindar capacidad funcional a nivel de caso de uso de negocio. Si se considera que el modelo de dominio gira en torno a los servicios de eSalud, el nodo agregado que lo provee se denominará \textit{macronodo}.
 
-Un nodo atómico está caracterizado por atributos (propiedades) e interfaces, estás últimas definidas como los puntos de acceso en donde los servicios del nodo son expuestos para ser consumidos\cite{theopengroup2016}. Un nodo agregado está definido por la 
+Un nodo atómico está caracterizado por atributos (propiedades) e interfaces. Estás últimas son los puntos de acceso en donde los servicios del nodo son expuestos para ser consumidos\cite{theopengroup2016}. Un nodo agregado está definido por el conjunto de atributos de los nodos que lo componen y las interfaces que surgen de la interoperabilidad de dichos nodos. Un nodo puede pertenecer a uno o más agregados razón por la cual un nodo - atómico o agregado, goza de alta cohesión y bajo acoplamiento como patrón principal\footnote{En el mayor grado en que se cumplan estos patrones más simple resulta la caracterización de las redes.}.
 
+Otro aspecto que se utiliza para la descripción de los nodos es la categoría o clase a la cual pertenece el nodo. Debido a que la arquitectura de la red puede ser abordada desde distintos puntos de vista - y niveles de abstracción, un nodo puede tener asociada uno o varias categorías dependiendo del modelo que regule la red. Por ejemplo, el modelo de componentes que propone la OMS podría definir las categorías de clasificación de los nodos, posterior a ello, si surge otro modelo o se edita el actual, los nodos podrían adaptarse manteniendo las relaciones categoría - modelo,  categoría - categoría, categoría - modelo - tiempo o categoría - categoría - tiempo.
 
-
-
-
-
-
-
-
-
-En este sentido, el grupo de investigación decide desarrollar un proyecto enfocado en la caracterización multidominio de los sistemas de salud para poder determinar la capacidad que estos presentan para poder desarrollar eSalud. 
-
-La fase actual del SITEM se centra en varios componentes: médicos, tecnológicos, administrativos, humanos y financieros. Sin embargo, debido al perfil de profesionales que han participado en el desarrollo, los elementos tecnológicos han sido mejor caracterizados hasta el momento.
+De lo anterior se desprende que el grupo de investigación desarrolla OpenSITEM enfocado en la caracterización multidominio de los sistemas de salud, tomando como modelo de mayor nivel de abstracción en propuesto por la OMS y uno de baja abstracción con categorías: médica, tecnológicas, administrativa, humana y financiera. Sin embargo, debido al perfil de profesionales que han participado en el desarrollo, los nodos de la categoría tecnológica han sido mejor caracterizados hasta el momento.
 
 \begin{figure}
  \centering
@@ -39,7 +30,7 @@ La fase actual del SITEM se centra en varios componentes: médicos, tecnológico
  \label{subcomponentes}
 \end{figure}
 
-Para facilitar el análisis y modelado en la dimensión tecnológica, un sistema de eSalud - con enfoque de Telemedicina, puede reducirse a cuatro subsistemas: \cite{aparicio2003}
+Para facilitar el análisis y modelado en la dimensión tecnológica, un nodo con enfoque de eSalud, puede pertenecer a uno de cuatro subsistemas: \cite{aparicio2003}
 
 \begin{itemize}
  \item \textbf{Subsistema de Captura de datos:} Conformado por los dispositivos de hardware, los protocolos y aplicaciones software que trabajan conjuntamente para transformar información médica en datos susceptibles de ser administrados usando técnicas digitales.
