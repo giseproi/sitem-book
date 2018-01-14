@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.19)  11 JAN 2018 00:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.19)  13 JAN 2018 21:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -501,8 +501,6 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
 Non-PDF special ignored!]
 \openout2 = `Presentacion.aux'.
 
@@ -676,7 +674,7 @@ Non-PDF special ignored! <./pagina_principal.png (PNG copy)>]
 
 (./Capitulo_Contexto_Teorico.tex
 Cap\'{\i }tulo 2.
-(./esalud.tex <concepto_red_esalud.png, id=59, 227.85126pt x 236.885pt>
+(./red_esalud.tex <concepto_red_esalud.png, id=59, 227.85126pt x 236.885pt>
 File: concepto_red_esalud.png Graphic file (type png)
 
 <use concepto_red_esalud.png>
@@ -690,7 +688,18 @@ Non-PDF special ignored!
 
 
 Non-PDF special ignored!
-Non-PDF special ignored!] [16
+Non-PDF special ignored!]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 16.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 16.
+
+Overfull \hbox (57.01962pt too wide) in paragraph at lines 20--21
+\OT1/cmr/m/n/10.95 los pun-tos de ac-ce-so en don-de los ser-vi-cios del no-do 
+son ex-pues-tos pa-ra ser consumidos[[]].
+ []
+
+[16
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -703,12 +712,11 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored! <./concepto_red_esalud.png>]
-<sistema_telemedicina.png, id=68, 443.6575pt x 443.6575pt>
-File: sistema_telemedicina.png Graphic file (type png)
-
-<use sistema_telemedicina.png>
-Package pdftex.def Info: sistema_telemedicina.png used on input line 34.
-(pdftex.def)             Requested size: 443.85948pt x 443.85948pt.
+<red_1.png, id=71, 443.6575pt x 175.65625pt>
+File: red_1.png Graphic file (type png)
+ <use red_1.png>
+Package pdftex.def Info: red_1.png used on input line 28.
+(pdftex.def)             Requested size: 443.6564pt x 175.6558pt.
  [17
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -723,24 +731,7 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!] [18
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored! <./sistema_telemedicina.png (PNG copy)>]
-<red_1.png, id=76, 443.6575pt x 175.65625pt>
-File: red_1.png Graphic file (type png)
- <use red_1.png>
-Package pdftex.def Info: red_1.png used on input line 72.
-(pdftex.def)             Requested size: 443.6564pt x 175.6558pt.
-)
-(./Marco_Legislativo.tex [19
+Non-PDF special ignored! <./red_1.png>]) (./esalud.tex [18
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -752,23 +743,38 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
+Non-PDF special ignored!]
+<sistema_telemedicina.png, id=80, 443.6575pt x 443.6575pt>
+File: sistema_telemedicina.png Graphic file (type png)
+
+<use sistema_telemedicina.png>
+Package pdftex.def Info: sistema_telemedicina.png used on input line 12.
+(pdftex.def)             Requested size: 443.85948pt x 443.85948pt.
+) (./Marco_Legislativo.tex [19
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored! <./red_1.png>] [20
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [21
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [20
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored! <./sistema_telemedicina.png (PNG copy)>] [21
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -802,8 +808,6 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
 Non-PDF special ignored!]) (./Gestion_de_Conocimiento.tex
 Overfull \hbox (5.7381pt too wide) in paragraph at lines 3--4
 []\OT1/cmr/m/n/10.95 La ges-ti^^Son del co-no-ci-mien-to es de esos con-cep-tos
@@ -812,6 +816,10 @@ s [[]],
  []
 
 [24
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -833,14 +841,28 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
+Non-PDF special ignored!] [26
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
 Non-PDF special ignored!]
-<Ciclo_Conocimiento.png, id=101, 443.6575pt x 443.6575pt>
+<Ciclo_Conocimiento.png, id=107, 443.6575pt x 443.6575pt>
 File: Ciclo_Conocimiento.png Graphic file (type png)
 
 <use Ciclo_Conocimiento.png>
 Package pdftex.def Info: Ciclo_Conocimiento.png used on input line 60.
 (pdftex.def)             Requested size: 443.85948pt x 443.85948pt.
- [26
+ [27
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -852,9 +874,9 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
+Non-PDF special ignored!] [28
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!] [27
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -862,9 +884,9 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
+Non-PDF special ignored! <./Ciclo_Conocimiento.png (PNG copy)>] [29
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored! <./Ciclo_Conocimiento.png (PNG copy)>] [28
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -874,25 +896,25 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
+Non-PDF special ignored!] [30
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!] [29
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
+Non-PDF special ignored!]) (./Ingenieria_de_Software.tex [31
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!]) (./Ingenieria_de_Software.tex [30
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -909,27 +931,6 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 8.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 8.
- [31
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -951,13 +952,9 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
 Non-PDF special ignored!] [33
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -981,31 +978,31 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
+Non-PDF special ignored!] [35
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!] <proceso_fs.png, id=133, 443.6575pt x 388.45125pt>
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] <proceso_fs.png, id=136, 443.6575pt x 388.45125pt>
 File: proceso_fs.png Graphic file (type png)
 
 <use proceso_fs.png>
 Package pdftex.def Info: proceso_fs.png used on input line 65.
 (pdftex.def)             Requested size: 443.85948pt x 389.81355pt.
- [35
+ [36
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [36
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1016,8 +1013,6 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored! <./proceso_fs.png (PNG copy)>] [37
-Non-PDF special ignored!
-Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1053,7 +1048,19 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
 Non-PDF special ignored!] [39
+Non-PDF special ignored!
+Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1071,8 +1078,6 @@ Non-PDF special ignored!] [40
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
 Non-PDF special ignored!] [41
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1081,6 +1086,7 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
+Non-PDF special ignored!] [42
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1091,13 +1097,30 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!] <pu.png, id=157, 400.49625pt x 542.025pt>
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] <pu.png, id=161, 400.49625pt x 542.025pt>
 File: pu.png Graphic file (type png)
 
 <use pu.png>
 Package pdftex.def Info: pu.png used on input line 228.
 (pdftex.def)             Requested size: 398.3625pt x 540.62593pt.
- [42
+ [43
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1107,6 +1130,7 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
+Non-PDF special ignored!] [44
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1116,26 +1140,7 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [43
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored! <./pu.png>] [44
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!]) (./Portales.tex [45
+Non-PDF special ignored! <./pu.png>]) (./Portales.tex [45
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1149,13 +1154,7 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
 Non-PDF special ignored!] [47
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1181,9 +1180,21 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!])) [49
+Non-PDF special ignored!] [49
 Non-PDF special ignored!
 Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!])) [50
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1206,13 +1217,13 @@ Non-PDF special ignored!]
 
  (./Capitulo_SITEM.tex
 Cap\'{\i }tulo 3.
-<sitem_principal.png, id=186, 406.51875pt x 542.025pt>
+<sitem_principal.png, id=189, 406.51875pt x 542.025pt>
 File: sitem_principal.png Graphic file (type png)
 
 <use sitem_principal.png>
 Package pdftex.def Info: sitem_principal.png used on input line 9.
 (pdftex.def)             Requested size: 404.04276pt x 540.62593pt.
- [50
+ [51
 Non-PDF special ignored!
 Non-PDF special ignored!
 
@@ -1220,7 +1231,7 @@ Non-PDF special ignored!
 
 
 Non-PDF special ignored!
-Non-PDF special ignored!] [51
+Non-PDF special ignored!] [52
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1228,30 +1239,30 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored! <./sitem_principal.png (PNG copy)>] [52
+Non-PDF special ignored! <./sitem_principal.png (PNG copy)>] [53
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!]
-<componentes_sitem.png, id=196, 399.4925pt x 542.025pt>
+<componentes_sitem.png, id=199, 399.4925pt x 542.025pt>
 File: componentes_sitem.png Graphic file (type png)
 
 <use componentes_sitem.png>
 Package pdftex.def Info: componentes_sitem.png used on input line 34.
 (pdftex.def)             Requested size: 398.3577pt x 540.62593pt.
- <entidades.png, id=197, 227.6505pt x 171.2799pt>
+ <entidades.png, id=200, 227.6505pt x 171.2799pt>
 File: entidades.png Graphic file (type png)
 
 <use entidades.png>
 Package pdftex.def Info: entidades.png used on input line 45.
 (pdftex.def)             Requested size: 227.62909pt x 147.96428pt.
- [53
+ [54
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!] [54
+Non-PDF special ignored!] [55
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1262,12 +1273,12 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored! <./componentes_sitem.png (PNG copy)>]
-<operadores.png, id=205, 227.6505pt x 150.3216pt>
+<operadores.png, id=208, 227.6505pt x 150.3216pt>
 File: operadores.png Graphic file (type png)
  <use operadores.png>
 Package pdftex.def Info: operadores.png used on input line 66.
 (pdftex.def)             Requested size: 227.62909pt x 147.96097pt.
- [55
+ [56
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1284,17 +1295,17 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored! <./entidades.png (PNG copy)> <./operadores.png (PNG co
-py)>] <servicios.png, id=209, 227.6505pt x 148.1535pt>
+py)>] <servicios.png, id=212, 227.6505pt x 148.1535pt>
 File: servicios.png Graphic file (type png)
  <use servicios.png>
 Package pdftex.def Info: servicios.png used on input line 86.
 (pdftex.def)             Requested size: 227.62909pt x 170.73012pt.
 
-[56
+[57
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!] [57
+Non-PDF special ignored!] [58
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1316,13 +1327,13 @@ Overfull \hbox (21.37134pt too wide) in paragraph at lines 107--108
 eek (http://www.aspseek.com)
  []
 
-<sitem_aplicaciones.png, id=216, 443.6575pt x 443.6575pt>
+<sitem_aplicaciones.png, id=219, 443.6575pt x 443.6575pt>
 File: sitem_aplicaciones.png Graphic file (type png)
 
 <use sitem_aplicaciones.png>
 Package pdftex.def Info: sitem_aplicaciones.png used on input line 119.
 (pdftex.def)             Requested size: 443.85948pt x 443.85948pt.
- [58
+ [59
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1336,7 +1347,7 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!] [59
+Non-PDF special ignored!] [60
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1346,7 +1357,7 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored! <./sitem_aplicaciones.png (PNG copy)>] [60
+Non-PDF special ignored! <./sitem_aplicaciones.png (PNG copy)>] [61
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1364,7 +1375,7 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!]) [61
+Non-PDF special ignored!]) [62
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1377,7 +1388,7 @@ Non-PDF special ignored!]
 
  (./proceso_desarrollo.tex
 Cap\'{\i }tulo 4.
-[62
+[63
 Non-PDF special ignored!
 Non-PDF special ignored!
 
@@ -1397,33 +1408,15 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!]
 
-LaTeX Warning: Citation `lewis2013' on page 63 undefined on input line 30.
+LaTeX Warning: Citation `lewis2013' on page 64 undefined on input line 30.
 
-[63
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [64
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
+[64
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!] [65
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1455,10 +1448,6 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
 Non-PDF special ignored!] [67
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1469,13 +1458,35 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!] <secuencia.png, id=249, 443.6575pt x 541.02126pt>
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [68
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] <secuencia.png, id=252, 443.6575pt x 541.02126pt>
 File: secuencia.png Graphic file (type png)
 
 <use secuencia.png>
 Package pdftex.def Info: secuencia.png used on input line 170.
 (pdftex.def)             Requested size: 443.85948pt x 443.87144pt.
- [68
+ [69
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1493,7 +1504,7 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!] [69
+Non-PDF special ignored!] [70
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1504,12 +1515,12 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored! <./secuencia.png (PNG copy)>]
-<carpetas.png, id=256, 443.6575pt x 541.02126pt>
+<carpetas.png, id=259, 443.6575pt x 541.02126pt>
 File: carpetas.png Graphic file (type png)
  <use carpetas.png>
 Package pdftex.def Info: carpetas.png used on input line 198.
 (pdftex.def)             Requested size: 443.85948pt x 443.87144pt.
- [70
+ [71
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1525,7 +1536,7 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!] [71
+Non-PDF special ignored!] [72
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1536,16 +1547,16 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored! <./carpetas.png (PNG copy)>]
-<desenlace.png, id=263, 443.6575pt x 542.025pt>
+<desenlace.png, id=267, 443.6575pt x 542.025pt>
 File: desenlace.png Graphic file (type png)
  <use desenlace.png>
 Package pdftex.def Info: desenlace.png used on input line 214.
 (pdftex.def)             Requested size: 443.85948pt x 443.87616pt.
- [72
+ [73
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!] [73
+Non-PDF special ignored!] [74
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1554,13 +1565,13 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored! <./desenlace.png (PNG copy)>]
-<secciones.png, id=271, 443.6575pt x 542.025pt>
+<secciones.png, id=274, 443.6575pt x 542.025pt>
 File: secciones.png Graphic file (type png)
  <use secciones.png>
 Package pdftex.def Info: secciones.png used on input line 245.
 (pdftex.def)             Requested size: 443.85948pt x 443.87616pt.
 
-<seccion_colapsada.png, id=272, 443.6575pt x 542.025pt>
+<seccion_colapsada.png, id=275, 443.6575pt x 542.025pt>
 File: seccion_colapsada.png Graphic file (type png)
 
 <use seccion_colapsada.png>
@@ -1572,7 +1583,7 @@ Overfull \hbox (7.62956pt too wide) in paragraph at lines 259--259
 ttp://gitem.udistrital.edu.co/sitem/desarrollo/index.php.| 
  []
 
-[74
+[75
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1586,7 +1597,7 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!] [75
+Non-PDF special ignored!] [76
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1596,7 +1607,7 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored! <./secciones.png (PNG copy)>] [76
+Non-PDF special ignored! <./secciones.png (PNG copy)>] [77
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1606,17 +1617,7 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored! <./seccion_colapsada.png>] [77
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
+Non-PDF special ignored! <./seccion_colapsada.png>] [78
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1628,7 +1629,17 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!]) [78
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!]) [79
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1639,53 +1650,13 @@ Non-PDF special ignored!
 Non-PDF special ignored!]
 \openout2 = `Bibliografia.aux'.
 
- (./Bibliografia.tex [79
+ (./Bibliografia.tex [80
 Non-PDF special ignored!
 Non-PDF special ignored!
 
 
 
 
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [80
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1710,6 +1681,10 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!] [81
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1817,7 +1792,45 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!]) [84
+Non-PDF special ignored!] [84
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!]) [85
+Non-PDF special ignored!
+Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1844,17 +1857,13 @@ Non-PDF special ignored!
 Non-PDF special ignored!]
 \openout2 = `glosario.aux'.
 
- (./glosario.tex [85
+ (./glosario.tex [86
 Non-PDF special ignored!
 Non-PDF special ignored!
 
 
 
 
-Non-PDF special ignored!
-Non-PDF special ignored!] [86
-Non-PDF special ignored!
-Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!] [87
 Non-PDF special ignored!
@@ -1876,7 +1885,11 @@ Non-PDF special ignored!] [91
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!]) [92
+Non-PDF special ignored!] [92
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!]) [93
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1885,25 +1898,13 @@ Non-PDF special ignored!]
 
  (./Riesgos.tex
 Anexo A.
-[93
+[94
 Non-PDF special ignored!
 Non-PDF special ignored!
 
 
 
 
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [94
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1919,7 +1920,19 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!]) [96
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [96
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!]) [97
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1938,27 +1951,19 @@ Non-PDF special ignored!]
 
  (./licencia.tex
 Anexo B.
-[97
+[98
 Non-PDF special ignored!
 Non-PDF special ignored!
 
 
 
 
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [98
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!] [99
+Non-PDF special ignored!
+Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1982,13 +1987,21 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
+Non-PDF special ignored!] [102
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!]) [102
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!]) [103
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -2001,7 +2014,7 @@ Non-PDF special ignored!]
 
  (./modelo_requisitos.tex
 Anexo C.
-[103
+[104
 Non-PDF special ignored!
 Non-PDF special ignored!
 
@@ -2017,45 +2030,45 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!] <actores.png, id=370, 443.6575pt x 540.0175pt>
+Non-PDF special ignored!] <actores.png, id=373, 443.6575pt x 540.0175pt>
 File: actores.png Graphic file (type png)
 
 <use actores.png>
 Package pdftex.def Info: actores.png used on input line 23.
 (pdftex.def)             Requested size: 443.85948pt x 517.85059pt.
- <casos_admin.png, id=371, 443.6575pt x 542.025pt>
+ <casos_admin.png, id=374, 443.6575pt x 542.025pt>
 File: casos_admin.png Graphic file (type png)
 
 <use casos_admin.png>
 Package pdftex.def Info: casos_admin.png used on input line 33.
 (pdftex.def)             Requested size: 443.85948pt x 517.85689pt.
- <casos_consultor.png, id=372, 443.6575pt x 542.025pt>
+ <casos_consultor.png, id=375, 443.6575pt x 542.025pt>
 File: casos_consultor.png Graphic file (type png)
 
 <use casos_consultor.png>
 Package pdftex.def Info: casos_consultor.png used on input line 40.
 (pdftex.def)             Requested size: 443.85948pt x 517.85689pt.
- <casos_entidad.png, id=373, 443.6575pt x 542.025pt>
+ <casos_entidad.png, id=376, 443.6575pt x 542.025pt>
 File: casos_entidad.png Graphic file (type png)
 
 <use casos_entidad.png>
 Package pdftex.def Info: casos_entidad.png used on input line 47.
 (pdftex.def)             Requested size: 443.85948pt x 517.85689pt.
- <casos_servicios.png, id=374, 443.6575pt x 542.025pt>
+ <casos_servicios.png, id=377, 443.6575pt x 542.025pt>
 File: casos_servicios.png Graphic file (type png)
 
 <use casos_servicios.png>
 Package pdftex.def Info: casos_servicios.png used on input line 54.
 (pdftex.def)             Requested size: 443.85948pt x 517.85689pt.
 
-<casos_tecnologias.png, id=375, 443.6575pt x 542.025pt>
+<casos_tecnologias.png, id=378, 443.6575pt x 542.025pt>
 File: casos_tecnologias.png Graphic file (type png)
 
 <use casos_tecnologias.png>
 Package pdftex.def Info: casos_tecnologias.png used on input line 61.
 (pdftex.def)             Requested size: 443.85948pt x 517.85689pt.
 
-<casos_equipos.png, id=376, 443.6575pt x 542.025pt>
+<casos_equipos.png, id=379, 443.6575pt x 542.025pt>
 File: casos_equipos.png Graphic file (type png)
  <use casos_equipos.png>
 Package pdftex.def Info: casos_equipos.png used on input line 68.
@@ -2065,7 +2078,7 @@ File: casos_equipos.png Graphic file (type png)
 <use casos_equipos.png>
 Package pdftex.def Info: casos_equipos.png used on input line 75.
 (pdftex.def)             Requested size: 443.85948pt x 517.85689pt.
-) [104
+) [105
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -2075,7 +2088,7 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!] [105
+Non-PDF special ignored!] [106
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -2085,7 +2098,7 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored! <./actores.png>] [106
+Non-PDF special ignored! <./actores.png>] [107
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -2095,7 +2108,7 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored! <./casos_admin.png>] [107
+Non-PDF special ignored! <./casos_admin.png>] [108
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -2105,7 +2118,7 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored! <./casos_consultor.png>] [108
+Non-PDF special ignored! <./casos_consultor.png>] [109
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -2115,7 +2128,7 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored! <./casos_entidad.png>] [109
+Non-PDF special ignored! <./casos_entidad.png>] [110
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -2125,7 +2138,7 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored! <./casos_servicios.png>] [110
+Non-PDF special ignored! <./casos_servicios.png>] [111
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -2135,7 +2148,7 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored! <./casos_tecnologias.png>] [111
+Non-PDF special ignored! <./casos_tecnologias.png>] [112
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -2145,7 +2158,7 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored! <./casos_equipos.png>] [112
+Non-PDF special ignored! <./casos_equipos.png>] [113
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -2158,23 +2171,13 @@ Non-PDF special ignored!]
 
  (./modelo_analisis.tex
 Anexo D.
-) [113
+) [114
 Non-PDF special ignored!
 Non-PDF special ignored!
 
 
 
 
-Non-PDF special ignored!
-Non-PDF special ignored!] [114
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!] [115
 Non-PDF special ignored!
@@ -2276,6 +2279,16 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
+Non-PDF special ignored!] [125
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
 Non-PDF special ignored!]
 \openout2 = `modelo_implementacion.aux'.
 
@@ -2287,7 +2300,7 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 8.
- [125
+ [126
 Non-PDF special ignored!
 Non-PDF special ignored!
 
@@ -2322,13 +2335,13 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!]
-<mapa_navegacion.png, id=454, 446.66875pt x 542.025pt>
+<mapa_navegacion.png, id=458, 446.66875pt x 542.025pt>
 File: mapa_navegacion.png Graphic file (type png)
 
 <use mapa_navegacion.png>
 Package pdftex.def Info: mapa_navegacion.png used on input line 31.
 (pdftex.def)             Requested size: 443.87325pt x 517.85689pt.
- [126
+ [127
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -2352,7 +2365,7 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!] [127
+Non-PDF special ignored!] [128
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -2362,7 +2375,7 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored! <./mapa_navegacion.png>]) [128
+Non-PDF special ignored! <./mapa_navegacion.png>]) [129
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -2371,13 +2384,13 @@ Non-PDF special ignored!]
 
  (./modelo_datos.tex
 Anexo F.
-<datos_entidad.png, id=467, 443.6575pt x 541.02126pt>
+<datos_entidad.png, id=470, 443.6575pt x 541.02126pt>
 File: datos_entidad.png Graphic file (type png)
  <use datos_entidad.png>
 Package pdftex.def Info: datos_entidad.png used on input line 17.
 (pdftex.def)             Requested size: 443.85948pt x 517.85553pt.
 )
-[129
+[130
 Non-PDF special ignored!
 Non-PDF special ignored!
 
@@ -2397,7 +2410,7 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!] [130
+Non-PDF special ignored!] [131
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -2413,12 +2426,12 @@ Non-PDF special ignored! <./datos_entidad.png (PNG copy)>]
 
 (./modelo_despliegue.tex
 Anexo G.
-<despliegue.png, id=474, 401.5pt x 348.30125pt>
+<despliegue.png, id=477, 401.5pt x 348.30125pt>
 File: despliegue.png Graphic file (type png)
  <use despliegue.png>
 Package pdftex.def Info: despliegue.png used on input line 6.
 (pdftex.def)             Requested size: 401.21106pt x 347.1418pt.
-) [131
+) [132
 Non-PDF special ignored!
 Non-PDF special ignored!
 
@@ -2432,7 +2445,7 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!] [132
+Non-PDF special ignored!] [133
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -2447,25 +2460,13 @@ Non-PDF special ignored! <./despliegue.png>]
 
  (./encuesta_preliminar.tex
 Anexo H.
-[133
+[134
 Non-PDF special ignored!
 Non-PDF special ignored!
 
 
 
 
-Non-PDF special ignored!
-Non-PDF special ignored!] [134
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!] [135
 Non-PDF special ignored!
@@ -2479,33 +2480,21 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
 Non-PDF special ignored!] [136
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -2553,39 +2542,15 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
 Non-PDF special ignored!] [138
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -2681,9 +2646,19 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
 Non-PDF special ignored!] [140
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -2759,25 +2734,7 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
 Non-PDF special ignored!] [142
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -2865,6 +2822,14 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
 Non-PDF special ignored!] [144
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -2901,7 +2866,55 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!]) [145
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [145
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!]) [146
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -2930,7 +2943,7 @@ Non-PDF special ignored!]
 
  (./entregables.tex
 Anexo I.
-[146
+[147
 Non-PDF special ignored!
 Non-PDF special ignored!
 
@@ -2938,7 +2951,7 @@ Non-PDF special ignored!
 
 
 Non-PDF special ignored!
-Non-PDF special ignored!] [147
+Non-PDF special ignored!] [148
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -2957,17 +2970,7 @@ Underfull \hbox (badness 2435) in paragraph at lines 79--80
 []|\OT1/cmr/m/n/10.95 Proponer mo-di-fi-ca-cio-nes en
  []
 
-[148
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [149
+[149
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -2987,6 +2990,7 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
+Non-PDF special ignored!] [151
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -2999,7 +3003,16 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!]) [151
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!]) [152
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -3028,7 +3041,7 @@ Non-PDF special ignored!]
 
  (./manual_usuario.tex
 Anexo J.
-) [152
+) [153
 Non-PDF special ignored!
 Non-PDF special ignored!
 
@@ -3055,10 +3068,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4715 strings out of 494891
- 65958 string characters out of 6179038
- 202173 words of memory out of 5000000
- 7768 multiletter control sequences out of 15000+600000
+ 4719 strings out of 494891
+ 66016 string characters out of 6179038
+ 202194 words of memory out of 5000000
+ 7769 multiletter control sequences out of 15000+600000
  11801 words of font info for 41 fonts, out of 8000000 for 9000
  40 hyphenation exceptions out of 8191
  37i,12n,30p,1405b,536s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3074,10 +3087,10 @@ nts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type
 s/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 msy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on sitem.pdf (153 pages, 2889833 bytes).
+Output written on sitem.pdf (154 pages, 2893015 bytes).
 PDF statistics:
- 594 PDF objects out of 1000 (max. 8388607)
- 379 compressed objects within 4 object streams
+ 597 PDF objects out of 1000 (max. 8388607)
+ 381 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
  151 words of extra memory for PDF output out of 10000 (max. 10000000)
 
