@@ -2,51 +2,98 @@
 
 \textbf{OpenSITEM }es un sistema federado de aplicaciones de software libre o de código abierto que provee herramientas para analizar datos e información de los siguientes elementos que son de interés para la descripción - y definición de capacidad de, nodos potenciales de redes de e-salud: entidades de salud, servicios médicos, tecnologías de interconexión, operadores de telecomunicaciones, equipos médicos, organizaciones, profesionales, estándares, pacientes, enfermedades, medicamentos y proyectos. Provee un ambiente para apoyar las tareas de las comunidades de práctica involucradas en la investigación, el diseño, mantenimiento, desarrollo e implementación de redes de eSalud. Tuvo su génesis conceptual en la primera fase del Proyecto Telemedicina Bogotá como solución a la necesidad de administrar los resultados del estudio de campo realizado a las entidades e instituciones de salud y los operadores de Telecomunicaciones en la ciudad de Bogotá.
 
-Su principal objetivo es: Implementar un sistema que permita la definición, categorización y caracterización de nodos potenciales de redes de eSalud, para apoyar las actividades básicas de los \textit{trabajadores del conocimiento} en el área de la telemedicina del grupo GITEM\footnote{Conformado por profesionales y estudiantes de la Universidad Distrital así como por profesionales de las diferentes instituciones que han participado en los diferentes estudios de campo.}  ofreciéndoles, además de un repositorio de datos, herramientas que facilitan las tareas de capturar, extraer, organizar, analizar, encontrar, sintetizar, distribuir y compartir información y conocimiento de nodos potenciales de las redes de eSalud. OpenSITEM cuenta con herramientas para poder  actualizar el estado de los nodos definods en el modelo base así como para la definición de nodos y categorías inéditas del Sistema de Salud de Bogotá Distrito Capital. El modelo base de nodos y categorías se construye a partir del estudio de campo realizado por el grupo de investigación, haciendo especial énfasis en los requerimientos de eSalud que se definieron en esa época. 
+Su principal objetivo es: Implementar un sistema que permita la definición, categorización y caracterización de nodos potenciales de redes de eSalud, para apoyar las actividades básicas de los \textit{trabajadores del conocimiento} en el área de la telemedicina del grupo GITEM\footnote{Conformado por profesionales y estudiantes de la Universidad Distrital así como por profesionales de las diferentes instituciones que han participado en los diferentes estudios de campo.}  ofreciéndoles, además de un repositorio de datos, herramientas que facilitan las tareas de capturar, extraer, organizar, analizar, encontrar, sintetizar, distribuir y compartir información y conocimiento de nodos potenciales de las redes de eSalud. OpenSITEM cuenta con herramientas para poder  actualizar el estado de los nodos definods en el modelo base así como para la definición de nodos y categorías inéditas del Sistema de Salud de Bogotá Distrito Capital. El modelo base de nodos y categorías se construye a partir del estudio de campo realizado por el grupo de investigación, haciendo especial énfasis en los requerimientos de eSalud que se definieron en esa época.Con OpenSITEM se sistematiza los resultados de los estudios de campo emprendidos por el grupo de investigación GITEM y se constituye una plataforma para gestionar los datos de nodos potenciales de redes de eSalud. Contribuye a disminuir el tiempo de adquisición, análisis y despliegue de la información.  
 \begin{figure}
  \centering
  \includegraphics[width=142mm, height=190mm]{sitem_principal.png}
- \caption{Imagen en el año 2017 del Sistema de Información para Proyectos de Telemedicina}
+ \caption{Imagen en el año 2017 de la página principal de OpenSITEM}
  \label{pantalla_sitem}
 \end{figure}
 
+El proceso de integración del sistema\footnote{OpenSITEM es un sistema federado de aplicaciones.} está basado en métodos ampliamente conocidos \cite {balduino2010}, \cite{koch},\cite{jacobson2000},\cite{larman2004}. Para el diseño de los módulos inéditos se ha tenido en consideración principios, patrones y antipatrones, tratando de minimizar los riesgos asociados a la mala calidad del software.
 
-% ---- Fin revisión 2018/01/12
+OpenSITEM hace uso extensivo de aplicaciones existentes, marcos de trabajo, bibliotecas, APIs, servicios web y plantillas, lo que ha permitido lograr un alto grado de funcionalidad específica. Los módulos propios\footnote{En referencia a la autoría, no al carácter de código abierto.} - aquellos que hacen parte de la suite desarrollada por GITEM - se implementan sobre el framework OpenSARA \footnote{Diseñado y construido por GITEM. OpenSARA es un producto de este proyecto y se ha usado en otros dominios tanto en la Universidad Distrital (sistema de gestión de inventarios, sistema de consultas a comunidades, sistema de evaluación para acreditación, entre otros), como por algunas empresas del sector TI (OpenKyOS).}.
 
+\section{Módulos Funcionales}
 
+OpenSITEM- incluyendo las aplicaciones de terceros y las desarrolladas por GITEM, ofrece los siguientes módulos base:
 
+\begin{table}[]
+\centering
+\caption{My caption}
+\label{my-label}
+\begin{tabular}{lcl}
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{1}{c}{\cellcolor[HTML]{C0C0C0}\textbf{Módulo}} & \textbf{Elaboración} & \multicolumn{1}{c}{\cellcolor[HTML]{C0C0C0}\textbf{Nombre}}            \\
+Motor de Federación de Aplicaciones                         & Propia               & OpenSITEM-AF                                                           \\
+Gestión de Nodos                                            & Propia               & OpenSITEM-NM                                                           \\
+Motor de recomendación                                      & Propia               & OpenSITEM-RS                                                           \\
+Gestión de Encuestas                                        & Propia               & OpenSITEM-PM                                                           \\
+Inteligencia de Negocio                                     & Tercero              & Knowage                                                                \\
+Sistema de Información Geográfica                           & Tercero/Propia       & \begin{tabular}[c]{@{}l@{}}Cesium\\ qGIS\\ Leaflet\end{tabular}        \\
+Gestión Documental                                          & Tercero              & Alfresco                                                               \\
+Gestión de Reportes                                         & Tercero/Propio       & \begin{tabular}[c]{@{}l@{}}Reportico\\ Varias bibliotecas\end{tabular}
+\end{tabular}
+\end{table}
 
-
-
-
-
-Con el SITEM se disminuye el tiempo de adquisición, análisis y despliegue de la información. Es construido guiado por adaptaciones de procesos de desarrollo ampliamente conocidos \cite{koch}\cite{jacobson2000}\cite{larman2004} y siguiendo el paradigma de la orientación a objetos con lo que se garantiza su facilidad de mantenimiento, escalabilidad e indirectamente su permanencia en el medio.
-
-Contiene módulos para la generación de estadísticas e informes pormenorizados de cada uno de los componentes y logra obtener en unos pocos segundos los datos necesarios para apoyar la labor de análisis, diseño e implementación de proyectos telemédicos o de telesalud. Usa un esquema modular de crecimiento a la medida en donde el esfuerzo para la creación de instrumentos nuevos de consulta se minimiza por el uso de plantillas prediseñadas. En lugar de ser un Sistema estático, SITEM contiene características de adaptación dinámica para cubrir las necesidades que tengan los próximos proyectos emanados del GITEM y otras entidades que hagan uso del sistema\footnote{El modelo y patrones de desarrollo del SITEM son actualmente usados en la construcción de portales de información institucional y en el Sistema Informático de Apoyo a la Evaluación que se encuentra desplegado en varias universidades.}.
-
-El sistema gestiona la estructuración de encuestas, formularios y talleres para crear un mecanismo ágil y costo - efectivo de recolección de información para las etapas de descripción y explicación\cite{hurtado2000} en proyectos de Telemedicina. Debido a que los resultados de los análisis pueden ser compartidos, sirven de guía a las instituciones o personas que deseen realizar estudios similares acerca del tema, facilitando el estudio de casos.
-
-\section{Características innovadoras del SITEM}
-
-El SITEM es el primer Sistema de Información de \textit{acceso público} en el entorno colombiano que gestiona información de la mayoría de los componentes fundamentales de las redes de Telemedicina, dotando a la comunidad de una herramienta única en su género, la cual puede ser utilizada en todas las etapas de desarrollo de proyectos en Telemedicina. Dentro de las múltiples ventajas que ofrece el sistema es que facilita la obtención de información ubicua y en tiempo real, lo que es indispensable para el apoyo óptimo en la toma de decisiones. 
-
-El desarrollo mismo del SITEM se convierte en un modelo a seguir para proyectos básicos de Telemedicina o Telesalud orientados a la Web proponiendo una arquitectura de desarrollo interoperable, escalable y fundamentada en software libre. La integración de tecnologías Web en el SITEM brinda una plataforma robusta para la implementación de servicios en entidades de salud que carezcan de altos recursos financieros. Esto a mediano plazo podrá generar un crecimiento de la oferta de servicios de medicina a distancia\cite{itu}\cite{craig2005}, ya que ayuda a mejorar la relación costo/beneficio en proyectos que por estar fundamentados en software comercial hasta el momento han sido inviables. 
-
-Con la puesta en marcha del proyecto SITEM se capta la atención del usuario en salud para que conozca y entienda las posibilidades de la tecnología de Telemedicina y empiece a tomar un papel activo en el desarrollo y despliegue de esta opción de servicio.
-
-\section{Arquitectura del Sistema}
-
-SITEM es implementado sobre una arquitectura multicapa que distribuye los diferentes componentes en tres capas principales: Presentación, aplicación y datos, estando presente una capa transversal tácita de seguridad. A nivel de usuario el SITEM está compuesto por siete subsistemas autónomos, figura \ref{componentes_sitem}, que prestan servicios a sus pares. Estos agrupan seis componentes claves en todo proyecto de telemedicina: entidades de salud, operadores de telecomunicaciones, tecnologías de interconexión, equipos y tecnologías de captura de datos, proyectos e instituciones relacionadas con la telemedicina y servicios médicos - incluyendo módulos de vademécum, consulta de procedimientos, enfermedades y especialidades médicas.
-
-\begin{figure}
- \centering
- \includegraphics[width=140mm, height=190mm]{componentes_sitem.png}
- \caption{Subsistemas Principales del SITEM}
- \label{componentes_sitem}
-\end{figure}
+\subsection{Características innovadoras de OpenSITEM}
 
 
-\subsection{Subsistema Entidades de Salud} 
+OpenSITEM presenta innovaciones en diferentes dominios:
+
+\begin{itemize}
+ \item Dominio de Aplicación: Desarrolla un motor y un proceso para la federación de aplicaciones. 
+ \item Dominio de arquitectura: Propone un modelo de arquitectura para nodos en redes de eSalud.
+ \item Dominio de utilidad: Implementa una plataforma para soportar flujos de trabajo de investigadores del GITEM. En el mercado no existe una herramienta que de manera unificada cumpliera con el modelo de requerimientos definido.
+ \item Dominio social: Tanto el framework (OpenSARA) como los módulos de OpenSITEM están disponibles en repositorios públicos y cobijados por licencia de código abierto. El framework ya se ha utilizado por equipos de trabajo externos al grupo GITEM. Se tiene presupuestado que la fase IV del proyecto (transición) permita que los datos también sean abiertos. 
+\end{itemize}
+
+
+\section{Arquitectura Base del Sistema}
+
+OpenSITEM es un modelo emergente de una aplicación federada con arquitectura orientada a servicios {earl2017}. Cada aplicación tiene su propia arquitectura la cual, en la mayoría de los casos, se abstrae visibilizando únicamente interfaces provenientes de las API o de los servicios web de adaptación. Teniendo en cuenta que existen diversas aplicaciones de terceros, el presente informe de resultados se enfocará en la descripción de la arquitectura de los módulos inéditos realizado en el marco del proyecto.
+
+
+\subsection{Motor de Federación}
+
+
+
+\subsection{Gestión de nodos}
+
+Un requisito no funcional de OpenSITEM es la escalabilidad
+
+
+\subsection{Motor de Recomendación}
+
+
+\subsection{Gestión de Encuestas}
+
+
+
+
+
+
+\section{Modelo de Nodos}
+
+Como se presentó anteriormente, el motor de gestión de nodos permite la definición de cualquier tipo de nodo. No obstante, el equipo de trabajo ha definido un modelo base de nodos que se consideran el conjunto reducido que permite describir los elementos primordiales \footnote{En es te caso el carácter de \textit{primordial} fue definido por el grupo de interesados del GITEM.}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsubsection{Subsistema Entidades de Salud} 
 Este subsistema, figura \ref{entidades}, se creó para gestionar los datos recopilados en el estudio de campo realizado por el grupo GITEM en el marco del proyecto del Sistema de Gestión de Salud para el Distrito Capital fases I y II. Es por ende el subsistema base para el SITEM y su objetivo principal es la gestión de información referente a las entidades de salud en el entorno colombiano enfocándose en tres redes principales: la red de especialidades médicas, la red de comunicaciones y la red de atención.
 
 \begin{figure}
@@ -58,7 +105,7 @@ Este subsistema, figura \ref{entidades}, se creó para gestionar los datos recop
 
 La información disponible en el subsistema puede ser administrada por cada una de las entidades prestadoras de servicios de salud, de tal forma que se cree gradualmente un catálogo flexible para conocer el estado actual de las entidades y su potencialidad para ser parte en redes que presten servicios de salud a distancia usando TIC. Por defecto, las entidades se asocian a la arquitectura de red de la secretaría de Salud de Bogotá pero por medio del módulo denominado \textit{redes de atención} se puede crear fácilmente cualquier prototipo de red jerárquica de atención \cite{yellowlees}.
 
-\subsection{Subsistema Tecnologías de Interconexión} 
+\subsubsection{Subsistema Tecnologías de Interconexión} 
 Administra información relacionada con las tecnologías y protocolos de interconexión disponibles en las redes de acceso y transporte. Estas tecnologías se ordenan principalmente sobre el modelo de referencia OSI pudiéndose crear  - desde el módulo de arquitecturas, cualquier otro tipo de modelo. En la actualidad se tiene como alternativa de clasificación el modelo de TCP/IP. Es una guía técnica que muestra la información de las capas físicas, de enlace y de red en formatos básicos- o de características generales; e intermedios - o de características técnicas.
 
 El objetivo principal que se persigue con la implementación de este subsistema es proveer a los analistas información para la revisión sistemática de las diferentes opciones que brindan los fabricantes de dispositivos y así proyectar redes que sean técnicamente viables. La información se estructura de acuerdo a indicadores cualitativos y cuantitativos que permiten evidenciar el carácter de interoperabilidad, impacto y permanencia de la tecnología en el mercado. 
@@ -68,7 +115,7 @@ Información técnica sobre los diversos equipos y tecnologías usadas en Teleme
 
 Combinado con los demás subsistemas provee un mecanismo eficiente para realizar auditorías \textit{ex-ante} en redes tecnológicas, valorando alternativas de intercambio y reposición en los nodos.
 
-\subsection{Subsistema Operadores de Telecomunicaciones}
+\subsubsection{Subsistema Operadores de Telecomunicaciones}
 
 \begin{figure}
  \centering
