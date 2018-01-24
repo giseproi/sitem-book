@@ -49,18 +49,34 @@ OpenSITEM presenta innovaciones en diferentes dominios:
 \end{itemize}
 
 
-\section{Arquitectura Base del Sistema}
+\section{Descripción de la Arquitectura de OpenSITEM}
 
-OpenSITEM es un modelo emergente de una aplicación federada con arquitectura orientada a servicios {earl2017}. Cada aplicación tiene su propia arquitectura la cual, en la mayoría de los casos, se abstrae visibilizando únicamente interfaces provenientes de las API o de los servicios web de adaptación. Teniendo en cuenta que existen diversas aplicaciones de terceros, el presente informe de resultados se enfocará en la descripción de la arquitectura de los módulos inéditos realizado en el marco del proyecto.
+OpenSITEM es una aplicación federada de arquitectura orientada a servicios, con características tales como las descritas en {earl2017}. La integración es realizada por un motor que permite el intercambio de mensajes y la sincronización de sesiones entre los diferentes aplicativos federados sin llegar a considerar una arquitectura de Bus de Servicio Empresarial (ESB por sus siglas en inglés)\footnote{Aunque existen ESB de corte empresarial tales como Mule, WSO2, Apache Service Mix o similares, el análisis de utilidad mostró que la mayoría de funcionalidades que ofrecen nunca serían utilizadas y entonces se optó por la simplicidad arquitectónica y evitar la tarea recurrente de configuración y administración del ESB. Ver el anexo \ref{appendix:lista_de_chequeo_ESB}.} 
+
+El presente informe describe la arquitectura general de OpenSITEM y de los módulos inéditos realizados en el marco del proyecto. Las aplicaciones federadas construidas por terceros se abstraen, visibilizando únicamente las interfaces provenientes de las API o de los servicios web de adaptación. 
+
+\subsection{Arquitectura General}
 
 
-\subsection{Motor de Federación}
+
+
+
+
+\subsection{Motor de Integración}
+
+Un primer análisis de la arquitectura general lleva a considerar la capa de integración como un Bus de Servicio Empresarial. \footnote{En el presente documento un Bus de Servicio Empresarial es considerado un estilo arquitectónico}
+
+
+
+
+
+
 
 
 
 \subsection{Gestión de nodos}
 
-Un requisito no funcional de OpenSITEM es la escalabilidad
+Un requisito no funcional de OpenSITEM es la capacidad de mantenimiento
 
 
 \subsection{Motor de Recomendación}
