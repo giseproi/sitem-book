@@ -20,14 +20,16 @@ OpenSITEM- incluyendo las aplicaciones de terceros y las desarrolladas por GITEM
 
 \begin{table}[]
 \centering
-\caption{My caption}
-\label{my-label}
+\caption{Módulos base de OpenSITEM}
+\label{tabla_modulos_opensitem}
 \begin{tabular}{lcl}
 \rowcolor[HTML]{C0C0C0} 
 \multicolumn{1}{c}{\cellcolor[HTML]{C0C0C0}\textbf{Módulo}} & \textbf{Elaboración} & \multicolumn{1}{c}{\cellcolor[HTML]{C0C0C0}\textbf{Nombre}}            \\
-Motor de Federación de Aplicaciones                         & Propia               & OpenSITEM-AF                                                           \\
-Gestión de Nodos                                            & Propia               & OpenSITEM-NM                                                           \\
+Motor de Federación de Aplicaciones                         & Propia               & OpenSITEM-FE                                                           \\
 Motor de recomendación                                      & Propia               & OpenSITEM-RS                                                           \\
+Gestión de Nodos                                            & Propia               & OpenSITEM-NM                                                           \\
+Diseñador de Redes                                          & Propia               & OpenSITEM-ND                                                           \\
+Analizador de Redes                                         & Propia               & OpenSITEM-NA                                                           \\
 Gestión de Encuestas                                        & Propia               & OpenSITEM-PM                                                           \\
 Inteligencia de Negocio                                     & Tercero              & Knowage                                                                \\
 Sistema de Información Geográfica                           & Tercero/Propia       & \begin{tabular}[c]{@{}l@{}}Cesium\\ qGIS\\ Leaflet\end{tabular}        \\
@@ -51,32 +53,122 @@ OpenSITEM presenta innovaciones en diferentes dominios:
 
 \section{Descripción de la Arquitectura de OpenSITEM}
 
-OpenSITEM es una aplicación federada de arquitectura orientada a servicios, con características tales como las descritas en {earl2017}. La integración es realizada por un motor que permite el intercambio de mensajes y la sincronización de sesiones entre los diferentes aplicativos federados sin llegar a considerar una arquitectura de Bus de Servicio Empresarial (ESB por sus siglas en inglés)\footnote{Aunque existen ESB de corte empresarial tales como Mule, WSO2, Apache Service Mix o similares, el análisis de utilidad mostró que la mayoría de funcionalidades que ofrecen nunca serían utilizadas y entonces se optó por la simplicidad arquitectónica y evitar la tarea recurrente de configuración y administración del ESB. Ver el anexo \ref{appendix:lista_de_chequeo_ESB}.} 
+OpenSITEM es una aplicación federada de arquitectura orientada a servicios, con características como las descritas en {earl2017}. La integración es realizada por un motor que permite el intercambio de mensajes y la sincronización de sesiones entre los diferentes aplicativos federados sin llegar a considerar una arquitectura de Bus de Servicio Empresarial (ESB por sus siglas en inglés)\footnote{Aunque existen ESB de corte empresarial tales como Mule, WSO2, Apache Service Mix o similares, el análisis de utilidad mostró que la mayoría de funcionalidades que ofrecen nunca serían utilizadas y entonces se optó por la simplicidad arquitectónica y evitar la tarea recurrente de configuración y administración del ESB. Ver el anexo \ref{appendix:lista_de_chequeo_ESB}.} 
 
 El presente informe describe la arquitectura general de OpenSITEM y de los módulos inéditos realizados en el marco del proyecto. Las aplicaciones federadas construidas por terceros se abstraen, visibilizando únicamente las interfaces provenientes de las API o de los servicios web de adaptación. 
 
 \subsection{Arquitectura General}
 
+La descripción de la arquitectura sistema (AD) se realiza con base al modelo conceptual definido en \cite{ISO42010}. Dada la extensión de los artefactos, se presentan aquellos apartes de la AD que a juicio de los autores se consideran relevantes para explicar las propiedades fundamentales.
+
+\subsubsection{Interesados e Intereses}
+
+El proyecto considera una aplicación inédita de la cual no se encontró referente de modelo de dominio. En este escenario se vuelve particularmente importante la identificación de los interesados los cuales están enfocados a los investigadores del grupo GITEM que participan en proyectos relacionados con las redes de eSalud, así como expertos en el diseño de redes de telecomunicaciones y de prestación de servicios médicos.
+
+Los mecanismos utilizados para la identificación fueron:
+
+\begin{itemize}
+ \item Entrevistas Directas: Realizadas en su mayoría durante la primera iteración de la fase de inicio. Se definió una entrevista base, anexo \ref{appendix:entrevista_posible_interesado}.
+ \item Reunión Presencial: De duración fija (30 minutos) y con agenda previa \footnote{La agenda en las reuniones de identificación fue simple. Se buscaba tener una idea de quienes eran los interesados representativos de los diferentes roles que existen en el grupo.}.
+ \item Matriz de identificación: En donde se consignaron las evaluaciones de los atributos de liderazgo, poder de decisión, nivel de interés en el proyecto, conocimiento, actitud ante el proyecto (oposición, neutralidad, soporte), procedencia (externa o interna - GITEM, Universidad). 
+\end{itemize}
+
+La siguiente tabla muestra el resultado del proceso de identificación:
 
 
+\begin{table}[]
+\centering
+\caption{Principales Interesados}
+\label{tabla_principales_interesados}
+\begin{tabular}{ll}
+\multicolumn{1}{c}{\textbf{Interesado}} & \multicolumn{1}{c}{\textbf{Intereses Principales}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   \\
+Asistente de Investigación Hospital     & \begin{tabular}[c]{@{}l@{}}*  Ingresar y corregir la información recopilada en el estudio de campo.\\ * Elaborar informes a partir de la información ingresada utilizando diferentes filtros y formatos.\\ * Generar una plantilla del informe de investigación que cumpla con los parámetros exigidos por la Universidad.\\ * Registrar las evidencias de las visitas de campo y demás entregables que exige el proyecto.\\ * Gestionar el proyecto de caracterización de los hospitales.\\ * Visualizar geográficamente algunos atributos del hospital (ubicación, zona de influencia, procedencia de pacientes, etc)\end{tabular} \\
+Analista en Proyectos eSalud del GITEM  & \begin{tabular}[c]{@{}l@{}}* Analizar la información de diferentes nodos (centros de atención en salud, proveedores de telecomunicaciones, profesionales de salud, pacientes, equipos médicos, servicios médicos, servicios de educación, etc)\\ * Evaluar la potencialidad de los nodos para pertenecer a una red de eSalud.\end{tabular}                                                                                                                                                                                                                                                                                           \\
+Diseñador de redes de eSalud            & \begin{tabular}[c]{@{}l@{}}* Diseñar redes de eSalud a partir de la interconexión de nodos de prestadores de salud.\\ * Evaluar la potencialidad de las redes diseñadas.\end{tabular}                                                                                                                                                                                                                                                                                                                                                                                                                                                \\
+Experto en nodo                         & \begin{tabular}[c]{@{}l@{}}* Ingresar y corregir información relacionada con el nodo.\\ * Elaborar informes a partir de la información ingresada utilizando diferentes filtros y formatos.\end{tabular}                                                                                                                                                                                                                                                                                                                                                                                                                             
+\end{tabular}
+\end{table}
+
+\subsubsection{Punto de Vista Estructural}
+
+La estructura de OpenSITEM se presenta principalmente desde tres puntos de vista:
+
+\begin{itemize}
+ \item Punto de Vista de Negocio (\ref{punto_negocio}): Con los grupos de actores, roles generales, servicios de negocio y procesos de negocio.
+ \item Punto de Vista de Aplicación (\ref{punto_aplicacion}): Con los grupos de Servicios de aplicación y Módulos de Aplicación (federadas y nativas\footnote{Una aplicación federada es aquella que mayormente ha sidos desarrollada por equipos externos, mientas que una aplicación nativa es la que mayormente ha sido desarrollada por integrantes de GITEM.}).
+ \item Punto de Vista Infraestructura (\ref{punto_infraestructura}): Con los grupos de Servicio de Infraestructura y Componente de Infraestructura.
+\end{itemize}
+
+\begin{figure}
+ \centering
+ \includegraphics[width=120mm]{negocio_vista_por_capas.png}
+ \caption{Punto de Vista de Negocio - Vista Conceptual por Capas}
+ \label{punto_negocio}
+\end{figure}
+
+\begin{figure}
+ \centering
+ \includegraphics[width=120mm]{punto_aplicacion.png}
+ \caption{Punto de Vista de Aplicación - Vista Conceptual por Capas.}
+ \label{punto_aplicacion}
+\end{figure}
+
+Las aplicaciones nativas se denotan por las iniciales de cada módulo. Por ejemplo el motor de federación (Federation Engine) se conoce como OpenSITEM-FE, el gestor de nodos (Node Management) como OpenSITEM-NM, etc.
+
+\begin{figure}
+ \centering
+ \includegraphics[width=120mm]{opensite_nativo.png}
+ \caption{Punto de Vista de Aplicación - Aplicaciones nativas de OpenSITEM.}
+ \label{punto_aplicacion}
+\end{figure}
 
 
-
-\subsection{Motor de Integración}
-
-Un primer análisis de la arquitectura general lleva a considerar la capa de integración como un Bus de Servicio Empresarial. \footnote{En el presente documento un Bus de Servicio Empresarial es considerado un estilo arquitectónico}
-
-
-
-
+\begin{figure}
+ \centering
+ \includegraphics[width=120mm]{punto_infraestructura.png}
+ \caption{Punto de Vista de Infraestructura - Vista Conceptual por Capas.}
+ \label{punto_infraestructura}
+\end{figure}
 
 
+\subsubsection{Punto de Vista de Comportamiento}
 
+\paragraph{OpenSITEM-FE: Motor de Federación de Aplicaciones}
+
+OpenSITEM no es un sistema de federación universal de aplicaciones. Integra aplicaciones que expongan su funcionalidad a través de interfaz de programación de aplicaciones (API) o de servicios web, utilizando protocolos de la pila TCP/IP con representación basada en XML o JSON. Por esta razón - y por las mostradas en el anexo \ref{appendix:lista_de_chequeo_ESB}; se prescindió de emplear una solución ESB y se diseñó un motor de integración con la siguiente funcionalidad:
+\begin{itemize}
+ \item Evaluación de Federación: Servicio que se encarga de recibir el mensaje proveniente de una aplicación - a través de un servicio web general, y definir si dicho mensaje hace parte de una transacción que es necesario ser federada. En el contexto de OpenSITEm, se dice que una transacción es federada cuando luego de su ejecución debe ``disparar'' transacciones en uno o varios sistemas diferentes.
+ \item Acceso a Aplicación: Servicio por el cual un usuario adquiere las credenciales para acceder o consumir un servicio específico de una aplicación federada.
+ \item 	Registro de transacción: Servicio específico por aplicación federada que se encarga de consumir un servicio web, y objetivo es realizar una transacción en una aplicación. 
+\end{itemize}
+
+\begin{figure}
+ \centering
+ \includegraphics[width=120mm]{motor_integracion_vista_comportamiento.png}
+ \caption{Punto de Vista de Comportamiento - Modelo General del Motor de Federación de Aplicaciones.}
+ \label{punto_infraestructura}
+\end{figure}
+
+
+\subsubsection{Punto de Vista de Distribución}
+
+Tanto OpenSITEM como cada una de las aplicaciones federadas están desplegadas en una infraestructura virtualizada. Aunque al momento de elaborar este informe se está trabajando en migrar a contenedores, la tecnología que se empela esta 100\% relacionada con máquinas virtuales.
+
+\begin{figure}
+ \centering
+ \includegraphics[width=120mm]{openSITEM_Vista_Distribucion.png}
+ \caption{Punto de Vista de Distribución.}
+ \label{punto_infraestructura}
+\end{figure}
+
+En un plano técnico, cada una de las instancias utiliza un sistema operativo GNU/Linux con distribución Centos.
 
 
 \subsection{Gestión de nodos}
 
-Un requisito no funcional de OpenSITEM es la capacidad de mantenimiento
+El módulo de gestión de nodos se puede considerar como un directorio enriquecido de los objetos con potencialidad de pertenecer a una red de eSalud. En OpenSITEM se considera que este es el nivel ontológico de mayor abstracción y constituye lo que denominamos el \textit{Catálogo de Nodos}.
+
+
 
 
 \subsection{Motor de Recomendación}
