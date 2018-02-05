@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.19)  26 JAN 2018 23:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.19)  5 FEB 2018 11:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -193,13 +193,22 @@ LaTeX Info: Redefining \% on input line 10.
 
 LaTeX Warning: Label `elementosred' multiply defined.
 
-) (./Capitulo_SITEM.aux) (./Capitulo_OpenSARA.aux)
-(./Capitulo_Caracteristicas_de_Calidad.aux) (./proceso_desarrollo.aux)
-(./Bibliografia.aux) (./glosario.aux) (./Riesgos.aux) (./licencia.aux)
-(./modelo_requisitos.aux) (./modelo_analisis.aux) (./modelo_implementacion.aux)
-(./modelo_datos.aux) (./modelo_despliegue.aux) (./encuesta_preliminar.aux)
-(./entregables.aux) (./manual_usuario.aux) (./lista_de_chequeo_ESB.aux)
-(./entrevista_posible_interesado.aux))
+) (./Capitulo_SITEM.aux
+
+LaTeX Warning: Label `punto_aplicacion' multiply defined.
+
+
+LaTeX Warning: Label `punto_infraestructura' multiply defined.
+
+
+LaTeX Warning: Label `punto_infraestructura' multiply defined.
+
+) (./Capitulo_OpenSARA.aux) (./Capitulo_Caracteristicas_de_Calidad.aux)
+(./proceso_desarrollo.aux) (./Bibliografia.aux) (./glosario.aux) (./Riesgos.aux
+) (./licencia.aux) (./modelo_requisitos.aux) (./modelo_analisis.aux)
+(./modelo_implementacion.aux) (./modelo_datos.aux) (./modelo_despliegue.aux)
+(./encuesta_preliminar.aux) (./entregables.aux) (./manual_usuario.aux)
+(./lista_de_chequeo_ESB.aux) (./entrevista_posible_interesado.aux))
 \openout1 = `sitem.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
@@ -498,50 +507,72 @@ Package pdftex.def Info: negocio_vista_por_capas.png used on input line 104.
 File: punto_aplicacion.png Graphic file (type png)
 
 <use punto_aplicacion.png>
-Package pdftex.def Info: punto_aplicacion.png used on input line 112.
+Package pdftex.def Info: punto_aplicacion.png used on input line 111.
 (pdftex.def)             Requested size: 341.43306pt x 210.9949pt.
 
-<punto_infraestructura.png, id=192, 725.71124pt x 431.6125pt>
+<opensitem_nativo.png, id=192, 501.875pt x 237.88875pt>
+File: opensitem_nativo.png Graphic file (type png)
+
+<use opensitem_nativo.png>
+Package pdftex.def Info: opensitem_nativo.png used on input line 120.
+(pdftex.def)             Requested size: 341.43306pt x 161.84569pt.
+
+<punto_infraestructura.png, id=193, 725.71124pt x 431.6125pt>
 File: punto_infraestructura.png Graphic file (type png)
 
 <use punto_infraestructura.png>
-Package pdftex.def Info: punto_infraestructura.png used on input line 120.
+Package pdftex.def Info: punto_infraestructura.png used on input line 128.
 (pdftex.def)             Requested size: 341.43306pt x 203.06863pt.
  [51 <./negocio_vista_por_capas.png (PNG copy)>] [52 <./punto_aplicacion.png (P
-NG copy)> <./punto_infraestructura.png (PNG copy)>] <entidades.png, id=199, 227
-.6505pt x 171.2799pt>
+NG copy)> <./opensitem_nativo.png (PNG copy)>]
+<motor_integracion_vista_comportamiento.png, id=200, 841.1425pt x 424.58624pt>
+File: motor_integracion_vista_comportamiento.png Graphic file (type png)
+
+<use motor_integracion_vista_comportamiento.png>
+Package pdftex.def Info: motor_integracion_vista_comportamiento.png used on inp
+ut line 147.
+(pdftex.def)             Requested size: 341.43306pt x 172.3452pt.
+
+<openSITEM_Vista_Distribucion.png, id=201, 455.7025pt x 402.50375pt>
+File: openSITEM_Vista_Distribucion.png Graphic file (type png)
+
+<use openSITEM_Vista_Distribucion.png>
+Package pdftex.def Info: openSITEM_Vista_Distribucion.png used on input line 15
+9.
+(pdftex.def)             Requested size: 341.43306pt x 301.58226pt.
+ [53 <./punto_infraestructura.png (PNG copy)>] [54 <./motor_integracion_vista_c
+omportamiento.png (PNG copy)> <./openSITEM_Vista_Distribucion.png (PNG copy)>]
+<entidades.png, id=209, 227.6505pt x 171.2799pt>
 File: entidades.png Graphic file (type png)
  <use entidades.png>
-Package pdftex.def Info: entidades.png used on input line 191.
+Package pdftex.def Info: entidades.png used on input line 209.
 (pdftex.def)             Requested size: 227.62909pt x 147.96428pt.
-
-[53] [54 <./entidades.png (PNG copy)>]
-<operadores.png, id=208, 227.6505pt x 150.3216pt>
+ [55]
+<operadores.png, id=214, 227.6505pt x 150.3216pt>
 File: operadores.png Graphic file (type png)
  <use operadores.png>
-Package pdftex.def Info: operadores.png used on input line 212.
+Package pdftex.def Info: operadores.png used on input line 230.
 (pdftex.def)             Requested size: 227.62909pt x 147.96097pt.
- [55 <./operadores.png (PNG copy)>] <servicios.png, id=212, 227.6505pt x 148.15
-35pt>
+ [56 <./entidades.png (PNG copy)>] [57 <./operadores.png (PNG copy)>]
+<servicios.png, id=221, 227.6505pt x 148.1535pt>
 File: servicios.png Graphic file (type png)
-
-<use servicios.png>
-Package pdftex.def Info: servicios.png used on input line 232.
+ <use servicios.png>
+Package pdftex.def Info: servicios.png used on input line 250.
 (pdftex.def)             Requested size: 227.62909pt x 170.73012pt.
- [56 <./servicios.png (PNG copy)>]
-Overfull \hbox (21.37134pt too wide) in paragraph at lines 253--254
+ [58 <./servicios.png (PNG copy)>]
+Overfull \hbox (21.37134pt too wide) in paragraph at lines 271--272
 \OT1/cmr/m/n/10.95 ta-park-Search (http://www.dataparksearch.org/, 2007), AS-PS
 eek (http://www.aspseek.com)
  []
 
-[57] <sitem_aplicaciones.png, id=219, 443.6575pt x 443.6575pt>
+[59] <sitem_aplicaciones.png, id=228, 443.6575pt x 443.6575pt>
 File: sitem_aplicaciones.png Graphic file (type png)
 
 <use sitem_aplicaciones.png>
-Package pdftex.def Info: sitem_aplicaciones.png used on input line 265.
+Package pdftex.def Info: sitem_aplicaciones.png used on input line 283.
 (pdftex.def)             Requested size: 443.85948pt x 443.85948pt.
- [58] [59 <./sitem_aplicaciones.png (PNG copy)>])
-[60]
+ [60] [61 <./sitem_aplicaciones.png (PNG copy)>])
+[62]
 \openout2 = `Capitulo_OpenSARA.aux'.
 
  (./Capitulo_OpenSARA.tex)
@@ -553,7 +584,7 @@ Package pdftex.def Info: sitem_aplicaciones.png used on input line 265.
 
 (./proceso_desarrollo.tex
 Cap\'{\i }tulo 4.
-[61
+[63
 
 
 
@@ -563,36 +594,36 @@ Cap\'{\i }tulo 4.
 
 ]
 
-LaTeX Warning: Citation `lewis2013' on page 62 undefined on input line 30.
+LaTeX Warning: Citation `lewis2013' on page 64 undefined on input line 30.
 
-[62] [63] [64] [65] [66] <secuencia.png, id=249, 443.6575pt x 541.02126pt>
+[64] [65] [66] [67] [68] <secuencia.png, id=258, 443.6575pt x 541.02126pt>
 File: secuencia.png Graphic file (type png)
 
 <use secuencia.png>
 Package pdftex.def Info: secuencia.png used on input line 170.
 (pdftex.def)             Requested size: 443.85948pt x 443.87144pt.
- [67] [68 <./secuencia.png (PNG copy)>]
-<carpetas.png, id=256, 443.6575pt x 541.02126pt>
+ [69] [70 <./secuencia.png (PNG copy)>]
+<carpetas.png, id=265, 443.6575pt x 541.02126pt>
 File: carpetas.png Graphic file (type png)
  <use carpetas.png>
 Package pdftex.def Info: carpetas.png used on input line 198.
 (pdftex.def)             Requested size: 443.85948pt x 443.87144pt.
- [69]
-[70 <./carpetas.png (PNG copy)>]
-<desenlace.png, id=263, 443.6575pt x 542.025pt>
+ [71]
+[72 <./carpetas.png (PNG copy)>]
+<desenlace.png, id=273, 443.6575pt x 542.025pt>
 File: desenlace.png Graphic file (type png)
  <use desenlace.png>
 Package pdftex.def Info: desenlace.png used on input line 214.
 (pdftex.def)             Requested size: 443.85948pt x 443.87616pt.
- [71]
-[72 <./desenlace.png (PNG copy)>]
-<secciones.png, id=271, 443.6575pt x 542.025pt>
+ [73]
+[74 <./desenlace.png (PNG copy)>]
+<secciones.png, id=280, 443.6575pt x 542.025pt>
 File: secciones.png Graphic file (type png)
  <use secciones.png>
 Package pdftex.def Info: secciones.png used on input line 245.
 (pdftex.def)             Requested size: 443.85948pt x 443.87616pt.
 
-<seccion_colapsada.png, id=272, 443.6575pt x 542.025pt>
+<seccion_colapsada.png, id=281, 443.6575pt x 542.025pt>
 File: seccion_colapsada.png Graphic file (type png)
 
 <use seccion_colapsada.png>
@@ -604,94 +635,94 @@ Overfull \hbox (7.62956pt too wide) in paragraph at lines 259--259
 ttp://gitem.udistrital.edu.co/sitem/desarrollo/index.php.| 
  []
 
-[73] [74 <./secciones.png (PNG copy)>] [75 <./seccion_colapsada.png>] [76])
-[77]
+[75] [76 <./secciones.png (PNG copy)>] [77 <./seccion_colapsada.png>] [78])
+[79]
 \openout2 = `Bibliografia.aux'.
 
- (./Bibliografia.tex [78
+ (./Bibliografia.tex [80
 
 
 
-] [79]
+] [81]
 Underfull \hbox (badness 10000) in paragraph at lines 91--92
 []\OT1/cmr/m/n/10.95 International Or-ga-ni-za-tion for Stan-dar-di-za-tion. (2
 011) \OT1/cmr/m/it/10.95 ISO/IEC/IEEE
  []
 
-[80] [81] [82]) [83]
+[82] [83] [84]) [85]
 \openout2 = `glosario.aux'.
 
- (./glosario.tex [84
+ (./glosario.tex [86
 
 
 
-] [85] [86] [87] [88] [89] [90])
-[91]
+] [87] [88] [89] [90] [91] [92])
+[93]
 \openout2 = `Riesgos.aux'.
 
  (./Riesgos.tex
 Anexo A.
-[92
+[94
 
 
 
-] [93] [94]) [95]
+] [95] [96]) [97]
 \openout2 = `licencia.aux'.
 
  (./licencia.tex
 Anexo B.
-[96
+[98
 
 
 
-] [97] [98] [99] [100]) [101]
+] [99] [100] [101] [102]) [103]
 \openout2 = `modelo_requisitos.aux'.
 
  (./modelo_requisitos.tex
 Anexo C.
-[102
+[104
 
 
 
-] <actores.png, id=370, 443.6575pt x 540.0175pt>
+] <actores.png, id=379, 443.6575pt x 540.0175pt>
 File: actores.png Graphic file (type png)
  <use actores.png>
 Package pdftex.def Info: actores.png used on input line 23.
 (pdftex.def)             Requested size: 443.85948pt x 517.85059pt.
 
-<casos_admin.png, id=371, 443.6575pt x 542.025pt>
+<casos_admin.png, id=380, 443.6575pt x 542.025pt>
 File: casos_admin.png Graphic file (type png)
  <use casos_admin.png>
 Package pdftex.def Info: casos_admin.png used on input line 33.
 (pdftex.def)             Requested size: 443.85948pt x 517.85689pt.
 
-<casos_consultor.png, id=372, 443.6575pt x 542.025pt>
+<casos_consultor.png, id=381, 443.6575pt x 542.025pt>
 File: casos_consultor.png Graphic file (type png)
 
 <use casos_consultor.png>
 Package pdftex.def Info: casos_consultor.png used on input line 40.
 (pdftex.def)             Requested size: 443.85948pt x 517.85689pt.
- <casos_entidad.png, id=373, 443.6575pt x 542.025pt>
+ <casos_entidad.png, id=382, 443.6575pt x 542.025pt>
 File: casos_entidad.png Graphic file (type png)
 
 <use casos_entidad.png>
 Package pdftex.def Info: casos_entidad.png used on input line 47.
 (pdftex.def)             Requested size: 443.85948pt x 517.85689pt.
- <casos_servicios.png, id=374, 443.6575pt x 542.025pt>
+ <casos_servicios.png, id=383, 443.6575pt x 542.025pt>
 File: casos_servicios.png Graphic file (type png)
 
 <use casos_servicios.png>
 Package pdftex.def Info: casos_servicios.png used on input line 54.
 (pdftex.def)             Requested size: 443.85948pt x 517.85689pt.
 
-<casos_tecnologias.png, id=375, 443.6575pt x 542.025pt>
+<casos_tecnologias.png, id=384, 443.6575pt x 542.025pt>
 File: casos_tecnologias.png Graphic file (type png)
 
 <use casos_tecnologias.png>
 Package pdftex.def Info: casos_tecnologias.png used on input line 61.
 (pdftex.def)             Requested size: 443.85948pt x 517.85689pt.
 
-<casos_equipos.png, id=376, 443.6575pt x 542.025pt>
+<casos_equipos.png, id=385, 443.6575pt x 542.025pt>
 File: casos_equipos.png Graphic file (type png)
  <use casos_equipos.png>
 Package pdftex.def Info: casos_equipos.png used on input line 68.
@@ -701,19 +732,19 @@ File: casos_equipos.png Graphic file (type png)
 <use casos_equipos.png>
 Package pdftex.def Info: casos_equipos.png used on input line 75.
 (pdftex.def)             Requested size: 443.85948pt x 517.85689pt.
-) [103] [104 <./actores.png>] [105 <./casos_admin.png>]
-[106 <./casos_consultor.png>] [107 <./casos_entidad.png>] [108 <./casos_servici
-os.png>] [109 <./casos_tecnologias.png>] [110 <./casos_equipos.png>] [111]
+) [105] [106 <./actores.png>] [107 <./casos_admin.png>]
+[108 <./casos_consultor.png>] [109 <./casos_entidad.png>] [110 <./casos_servici
+os.png>] [111 <./casos_tecnologias.png>] [112 <./casos_equipos.png>] [113]
 \openout2 = `modelo_analisis.aux'.
 
 
 (./modelo_analisis.tex
 Anexo D.
-) [112
+) [114
 
 
 
-] [113] [114] [115] [116] [117] [118] [119] [120] [121] [122] [123]
+] [115] [116] [117] [118] [119] [120] [121] [122] [123] [124] [125]
 \openout2 = `modelo_implementacion.aux'.
 
 
@@ -725,91 +756,91 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 8.
- [124
+ [126
 
 
 
 ]
-<mapa_navegacion.png, id=454, 446.66875pt x 542.025pt>
+<mapa_navegacion.png, id=464, 446.66875pt x 542.025pt>
 File: mapa_navegacion.png Graphic file (type png)
 
 <use mapa_navegacion.png>
 Package pdftex.def Info: mapa_navegacion.png used on input line 31.
 (pdftex.def)             Requested size: 443.87325pt x 517.85689pt.
- [125] [126 <./mapa_navegacion.png>]) [127]
+ [127] [128 <./mapa_navegacion.png>]) [129]
 \openout2 = `modelo_datos.aux'.
 
 
 (./modelo_datos.tex
 Anexo F.
-<datos_entidad.png, id=467, 443.6575pt x 541.02126pt>
+<datos_entidad.png, id=476, 443.6575pt x 541.02126pt>
 File: datos_entidad.png Graphic file (type png)
  <use datos_entidad.png>
 Package pdftex.def Info: datos_entidad.png used on input line 17.
 (pdftex.def)             Requested size: 443.85948pt x 517.85553pt.
 )
-[128
+[130
 
 
 
-] [129 <./datos_entidad.png (PNG copy)>]
+] [131 <./datos_entidad.png (PNG copy)>]
 \openout2 = `modelo_despliegue.aux'.
 
  (./modelo_despliegue.tex
 Anexo G.
-<despliegue.png, id=474, 401.5pt x 348.30125pt>
+<despliegue.png, id=483, 401.5pt x 348.30125pt>
 File: despliegue.png Graphic file (type png)
  <use despliegue.png>
 Package pdftex.def Info: despliegue.png used on input line 6.
 (pdftex.def)             Requested size: 401.21106pt x 347.1418pt.
-) [130
+) [132
 
 
 
 ]
-[131 <./despliegue.png>]
+[133 <./despliegue.png>]
 \openout2 = `encuesta_preliminar.aux'.
 
  (./encuesta_preliminar.tex
 Anexo H.
-[132
+[134
 
 
 
-] [133] [134] [135] [136] [137] [138] [139] [140] [141] [142] [143])
-[144]
+] [135] [136] [137] [138] [139] [140] [141] [142] [143] [144] [145])
+[146]
 \openout2 = `entregables.aux'.
 
  (./entregables.tex
 Anexo I.
-[145
+[147
 
 
 
-] [146]
+] [148]
 Underfull \hbox (badness 2435) in paragraph at lines 79--80
 []|\OT1/cmr/m/n/10.95 Proponer mo-di-fi-ca-cio-nes en
  []
 
-[147] [148] [149]) [150]
+[149] [150] [151]) [152]
 \openout2 = `manual_usuario.aux'.
 
  (./manual_usuario.tex
 Anexo J.
-) [151
+) [153
 
 
 
 ]
 \openout2 = `lista_de_chequeo_ESB.aux'.
 
- (./lista_de_chequeo_ESB.tex) [152
+ (./lista_de_chequeo_ESB.tex) [154
 
 
 ]
 \openout2 = `entrevista_posible_interesado.aux'.
 
- (./entrevista_posible_interesado.tex) [153
+ (./entrevista_posible_interesado.tex) [155
 
 
 ] (./sitem.aux
@@ -833,10 +864,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5235 strings out of 494891
- 72981 string characters out of 6179038
- 213457 words of memory out of 5000000
- 8250 multiletter control sequences out of 15000+600000
+ 5250 strings out of 494891
+ 73508 string characters out of 6179038
+ 213850 words of memory out of 5000000
+ 8262 multiletter control sequences out of 15000+600000
  12146 words of font info for 42 fonts, out of 8000000 for 9000
  40 hyphenation exceptions out of 8191
  37i,17n,35p,1535b,536s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -853,10 +884,10 @@ s/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 msy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on sitem.pdf (154 pages, 2794374 bytes).
+Output written on sitem.pdf (156 pages, 2849348 bytes).
 PDF statistics:
- 603 PDF objects out of 1000 (max. 8388607)
- 384 compressed objects within 4 object streams
+ 612 PDF objects out of 1000 (max. 8388607)
+ 388 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
- 161 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 176 words of extra memory for PDF output out of 10000 (max. 10000000)
 
