@@ -1,0 +1,80 @@
+\chapter{Estructura del Proyecto}
+
+Este capítulo presenta un resumen del proyecto denominado \textit{OpenSITEM: Sistema Federado de Aplicaciones para la Caracterización de Nodos Potenciales de Redes de e-salud}.
+
+\section{Objetivos}
+El proyecto planteó los siguientes objetivos:
+
+\subsection{Objetivo General}
+Describir una arquitectura de un sistema software cuya funcionalidad permita caracterizar nodos potenciales de redes de eSalud, considerando aspectos de adaptabilidad e interoperabilidad.
+
+\subsubsection{Objetivos Específicos}
+
+\begin{itemize}
+  \item Identificar, a partir del análisis de los resultados del estudio de campo existente, los tipos de nodos nucleares para la definición de redes de eSalud.
+  \item Producir o adaptar un marco de desarrollo de aplicaciones de código abierto que permita a los integrantes del grupo de investigación desarrollar módulos de software alineados con la descripción de la arquitectura.
+  \item Construir prototipos de software que implementen la funcionalidad de los módulos nucleares del sistema.
+  \item Establecer el nivel base de calidad de la descripción de la arquitectura y de los prototipos desarrollados con base en pruebas automatizadas y valoraciones de parte de los interesados.
+\end{itemize}
+
+\subsection{Base Metodológica}
+El proyecto se desarrolla con un enfoque mixto cualitativo - cuantitativo, con alcance exploratorio, descriptivo y proyectivo.
+
+Los métodos específicos empleados se decantan de una metodología Architecture Definition Method (ADM) y un método de desarrollo ágil basado en OpenUP, el cual es orientado a la  gestión del riesgo, guiado por casos de uso, centrado en la arquitectura, iterativo e incremental.
+
+\subsection{Metodología de Recolección de Información}
+
+El proyecto recolecta información para la definición del modelo de requisitos, para el establecimiento del nivel de calidad y para el soporte de las decisiones significativas para la arquitectura. A continuación se presenta los métodos empleados en cada una de estos dominios:
+
+\subsubsection{Modelo de Requisitos}
+Se emplearon varios métodos de los descritos en el OpenUP \cite{eclipse,2012}, es especial las entrevista a interesados, los talleres de requisitos y el estudio de sistemas similares. Todos y cada uno de ellos se realizaron de acuerdo a los lineamientos de OpenUP, siendo los talleres complementados con las técnicas descritas por Gottesdiener \cite{gottesdiener2012}.
+
+\subsubsection{Establecimiento de nivel de Calidad}
+Para el establecimiento de nivel de calidad se empleó el análisis de calidad de software empleando la herramienta SonarQube\footnote{https://www.sonarqube.org/}, el análisis de logs sel sistema y la presentación de prototipos a los interesados - técnica descrita en OpenUP \cite{eclipse,2012}. 
+
+\subsubsection{Soporte a decisiones arquitectónicamente significativas}
+Para recolectar información significativa para este dominio se empleó la técnica de reunión de tormenta de ideas y el \textit{mapeo} de historias de usuario\cite{patton2014}. 
+
+\subsection{Instrumentos Empleados para Recolección de Información}
+Varios instrumentos fueron diseñados para recolectar información y se aplicaron en diferentes sesiones de las reuniones de tormentas de ideas, talleres de requisitos, presentación de prototipos y entrevistas a interesados. En \label{appendix:entrevista_posible_interesado}, \label{formulario_preliminar} y \label{presentacion_prototipos} se presentan los instrumentos empleados, junto con una breve descripción de la metodología de creación, validación e interpretación.
+
+\subsubsection{Metodología para la Estructuración y Validación del Documento}
+
+La creación del formato de entrevista siguió un método de refinamiento basado en retroalimentación directa a partir de los pasos definidos por Dave Collingridge\cite{zellerino2009}. Cada una de las versiones fue desarrollada por el equipo y presentadas en los talleres de requisitos para aprobación por parte de los interesados.
+
+El proceso consistió en 6 pasos que se aplicaron de manera iterativa hasta obtener una versión estable del documento:
+
+\begin{itemize}
+ \item Validar por revisión de pares. Empleando expertos en el dominio - integrantes del grupo de investigación, y expertos en la elaboración de instrumentos - profesionales adscritos al comité de autoevaluación institucional colaboraron en esta tarea. Principalmente se revisó que las preguntas tuviesen claridad en el enunciado, no tuvieran sesgo, no generaran referencias circulares, no fueran de \textit{doble cañon}, entre otros. En este paso se categorizó cada pregunta de conformidad al contenido, conforme a la clasificación dada por García Córdoba\cite{garcia2008}.
+ \item Automatizar el instrumento. Para esto se elaboró un sistema de gestión de encuestas utilizando el marco de desarrollo OpenSARA. Dicho sistema permite crear preguntas de diferentes tipos, agruparlos en instrumentos, definir periodos de aplicación, generar reportes, entre otras funcionalidades\footnote{Si bien este módulo no hace parte de los objetivos del proyecto,si sirvió para validar la potencialidad del marco de desarrollo OpenSARA. El sistema de gestión de encuestas está siendo probado a nivel institucional para soportar los procesos de autoevaluación (http://autoevaluacion.udistrital.edu.co/version3/)}. 
+ \item Realizar una prueba piloto: Se seleccionó un conjunto que no superara el 20\% de la población de interesados y se les aplicó el instrumento. Se pidió que evaluaran la claridad, extensión y dificultad del instrumento.
+ \item Analizar los datos recolectados. Teniendo en consideración que los instrumentos están automatizados, el análisis parte de que se tiene datos íntegros. Se revisa por tanto la relación entre la respuesta y el sentido de la pregunta, la validez de los dominios de datos (en especial en preguntas cuantitativas), la pertinencia del tipo de pregunta (selección múltiple, abierta, selección única, etc) y el tiempo que se tarda en diligenciar el instrumento.
+ \item Análisis de componentes principales. A partir de las respuestas se crea una matriz de correlación de conceptos y se descartan aquellas preguntas que tengan un alto grado de correlación\cite{huang2011}. 
+\end{itemize}
+
+\subsection{Declaración de situación esperada}
+
+Con el desarrollo del proyecto se obtiene una descripción de arquitectura, los lineamientos para la construcción progresiva de un sistema software que implemente dicha arquitectura; y un conjunto base de prototipos. A partir de la entrega de estos resultados se espera que los estudios de campo y análisis realizados por el grupo de investigación puedan ser accedidos públicamente a través de Internet.
+
+\subsection{Requisitos Arquitectónicamente Significativos}
+Para la descripción de la arquitectura se definen los siguientes requisitos arquitectónicos para la adecuada gestión de riesgo:
+\begin{itemize}
+ \item Integrar aplicaciones robustas que en la actualidad estén licenciadas como código abierto.
+ \item Se prioriza la adaptación frente al desarrollo desde cero.
+ \item La interoperabilidad utilizan Arquitectura Orientada a Servicios con modelo de Bus de Servicio Empresarial
+ \item A nivel de aplicativo se promueve una arquitectura multicapa- multinivel, en donde la persistencia se tiene en nodos separados.
+ \item El crecimiento de la aplicación se realiza a través de Plugins o utilizando las API definidas.
+ \item Se propende por un sistema federado de aplicaciones
+ \item Funcionalidad emergente. Es decir, prototipos base cuyo acercamiento a la arquitectura se realiza progresivamente. Esto con el fin de gestionar -ser conscientes, del riesgo relacionado con el bajo tiempo de permanencia de personal especializado\footnote{Debido a la escasa financiación económica, no es posible mantener el personal que se ha especializado en el proyecto. El grupo - y sus profesores asociados, mantienen un ciclo corto de reclutamiento, capacitación, producción y transferencia}.
+\end{itemize}
+
+\subsection{Repositorios de Código Fuente}
+
+Los módulos de los prototipos así como el del marco de desarrollo se han liberado bajo una licencia considerada de código abierto. El código fuente se encuentra en repositorios públicos de la plataforma github:
+\begin{itemize}
+ \item Marco de Desarrollo de Aplicaciones OpenSARA: frameworksara/openSARA.
+ \item Módulo de nodos medicamentos: giseproi/OpenHealthVademecum.
+ \item Módulos de Prototipo OpenSITEM: giseproi/openSITEM.
+\end{itemize}
+
+Los repositorios son de acceso público y están administrados por el equipo de desarrollo. Los integrantes de este equipo se encargan de analizar las contribuciones para agregarlas a las ramas que vayan surgiendo. Con la entrega de este informe y la transferencia desde el servidor git privado a github, se está promoviendo la participación de nuevos actores que contribuyan a mejorar y hacer crecer el sistema.
